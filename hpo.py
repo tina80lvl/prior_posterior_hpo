@@ -50,6 +50,7 @@ def predict(model, test_data):
 #     plt.legend()
 #     time = datetime.datetime.now().strftime('-%H-%M-%S')
 #     plt.savefig('png/' + name + time + '.png')
+#     plt.clf()
 
 def main():
     logging.basicConfig(level=logging.INFO)
