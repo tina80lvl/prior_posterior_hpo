@@ -2,6 +2,7 @@
 .DS_Store
 check.py
 try.py
+plot_ex.py
 datasets/
 
 # Byte-compiled / optimized / DLL files
