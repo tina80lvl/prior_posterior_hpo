@@ -1,3 +1,9 @@
+# user
+.DS_Store
+check.py
+try.py
+datasets/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
