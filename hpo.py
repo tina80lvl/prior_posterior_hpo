@@ -55,8 +55,8 @@ def predict(model, test_data):
 def main():
     logging.basicConfig(level=logging.INFO)
 
-    datasets = ['small']
-    # datasets = ['artificial', 'cancers', 'eating', 'fashion', 'mouse', 'olivetti', 'poker', 'umist']
+    # datasets = ['small']
+    datasets = ['olivetti', 'umist', 'poker', 'eating', 'mouse', 'fashion']
     for dataset_name in datasets:
         train_data = read_dataset('datasets/', dataset_name + '_train.csv')
         model = train_model(train_data)

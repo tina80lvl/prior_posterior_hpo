@@ -4,6 +4,7 @@ check.py
 try.py
 plot_ex.py
 datasets/
+png/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
