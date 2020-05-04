@@ -1,0 +1,27 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {russian}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{ВВЕДЕНИЕ}{5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Обзор существующих решений}{6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Определения и ключевые понятия}{6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Выводы по главе\nobreakspace 1}{6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Предложенное решение}{7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Выводы по главе\nobreakspace 2}{7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Анализ полученных результатов}{8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Выводы по главе\nobreakspace 3}{8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{ЗАКЛЮЧЕНИЕ}{9}%
+\defcounter {refsection}{0}\relax 
+\ttl@change@i {\@ne }{chapter}{\appendixPrefix }{}{\contentslabel [ПРИЛОЖЕНИЕ \thecontentslabel .]{\the \appendixPrefix }}{\hspace *{-\the \appendixPrefix }}{\titlerule *[0.5pc]{.}\contentspage }\relax 
+\defcounter {refsection}{0}\relax 
+\ttl@change@v {chapter}{}{}{}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {А}Картиночки}{10}%
+\contentsfinish 
