@@ -20,7 +20,7 @@ for url in open('datasets-links.txt', 'r'):
         logging.info('Skipping dataset \'' + dataset_name + '\': already exists')
         continue
 
-    Downloading dataset
+    # Downloading dataset
     logging.info('Downloading dataset \'' + dataset_name + '\'')
     for link in doc.find_all('a', {'onclick': 'doDownload()'}):
         download_url = link.get('href')
