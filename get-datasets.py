@@ -16,18 +16,18 @@ for url in open('datasets-links.txt', 'r'):
 
     dataset_name = doc.find('h1').get_text().strip().replace('.','-').replace(',','-')
 
-    if (dataset_name + '.csv' in os.listdir('./datasets/')):
-        logging.info('Skipping dataset \'' + dataset_name + '\': already exists')
-        continue
+    # if (dataset_name + '.csv' in os.listdir('./datasets/')):
+    #     logging.info('Skipping dataset \'' + dataset_name + '\': already exists')
+    #     continue
 
-    # Downloading dataset
-    logging.info('Downloading dataset \'' + dataset_name + '\'')
-    for link in doc.find_all('a', {'onclick': 'doDownload()'}):
-        download_url = link.get('href')
-        if ('csv' in download_url):
-            open('./datasets/' + dataset_name + '.csv', 'wb').write(
-                requests.get(download_url).content
-            )
+    # # Downloading dataset
+    # logging.info('Downloading dataset \'' + dataset_name + '\'')
+    # for link in doc.find_all('a', {'onclick': 'doDownload()'}):
+    #     download_url = link.get('href')
+    #     if ('csv' in download_url):
+    #         open('./datasets/' + dataset_name + '.csv', 'wb').write(
+    #             requests.get(download_url).content
+    #         )
 
     # Collecting information about dataset
     logging.info('Collecting info about dataset \'' + dataset_name + '\'')

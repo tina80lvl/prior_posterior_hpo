@@ -43,7 +43,6 @@ glass,214,10,6
 spectrometer,531,103,48
 wine,178,14,3
 grub-damage,155,9,4
-BNG(cmc),55296,10,3
 visualizing_livestock,130,3,5
 pasture,36,23,3
 white-clover,63,32,4
@@ -60,14 +59,7 @@ eye_movements,10936,28,3
 gina_prior2,3468,785,10
 hayes-roth,160,5,3
 covertype,581012,55,7
-CovPokElec,1455525,73,10
 pokerhand,829201,11,10
-BNG(wine),1000000,14,3
-BNG(letter),1000000,17,26
-BNG(lymph),1000000,19,4
-BNG(heart-c),1000000,14,5
-BNG(bridges_version1),1000000,13,6
-BNG(vehicle),1000000,19,4
 breast-tissue,106,10,6
 volcanoes-a1,3252,4,5
 la2s-wc,3075,12433,6
@@ -99,3 +91,11 @@ robot-failures-lp1,88,91,4
 gas-drift-different-concentrations,13910,130,6
 wine-quality-white,4898,12,7
 aloi,108000,129,1000
+jungle_chess_2pcs_endgame_panther_elephant,4704,47,3
+jannis,83733,55,4
+mouseType,214,45102,7
+robert,10000,7201,10
+shuttle,58000,10,7
+helena,65196,28,100
+hepatitisC,283,54622,3
+fabert,8237,801,7
