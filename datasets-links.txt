@@ -10,7 +10,6 @@ https://www.openml.org/d/1501
 https://www.openml.org/d/54
 https://www.openml.org/d/182
 https://www.openml.org/d/11
-https://www.openml.org/d/300
 https://www.openml.org/d/1459
 https://www.openml.org/d/1466
 https://www.openml.org/d/23
@@ -90,9 +89,7 @@ https://www.openml.org/d/41164
 https://www.openml.org/d/40672
 https://www.openml.org/d/41989
 https://www.openml.org/d/41991
-https://www.openml.org/d/42003
 https://www.openml.org/d/42140
-https://www.openml.org/d/42186
 https://www.openml.org/d/42166
 https://www.openml.org/d/41972
 https://www.openml.org/d/40985
