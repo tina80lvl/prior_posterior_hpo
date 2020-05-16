@@ -1,7 +1,8 @@
 import pandas as pd
 from utils import read_dataset
+from utils import get_datasets_list
 
-datasets = ['small']
+datasets = get_datasets_list('datasets/')
 for dataset_name in datasets:
     data = read_dataset('datasets/', dataset_name + '.csv')
 
