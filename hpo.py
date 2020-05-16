@@ -56,15 +56,15 @@ def predict(model, test_data):
 
     return mean_pred, var_pred, y
 
-# def plot_predicted(mean, variance, real, name):
-#     plt.plot(mean, linestyle='dashed', color="red", label='mean')
-#     plt.plot(variance, linestyle='solid', color="blue", label='variance')
-#     plt.plot(real, linestyle='solid', color="green", label='real')
-#     plt.xlabel('Points to predict')
-#     plt.legend()
-#     time = datetime.datetime.now().strftime('-%H-%M-%S')
-#     plt.savefig('png/' + name + time + '.png')
-#     plt.clf()
+def plot_predicted(mean, variance, real, name):
+    plt.plot(mean, linestyle='dashed', color="red", label='mean')
+    plt.plot(variance, linestyle='solid', color="blue", label='variance')
+    plt.plot(real, linestyle='solid', color="green", label='real')
+    plt.xlabel('Points to predict')
+    plt.legend()
+    time = datetime.datetime.now().strftime('-%H-%M-%S')
+    plt.savefig('png/' + name + time + '.png')
+    plt.clf()
 
 # TODO remove
 def objective_func(x):
@@ -81,67 +81,38 @@ def main():
         splitter = math.ceil(0.6 * len(data))
 
         train_data = data[:splitter]
-        # model = train_model(train_data)
+        test_data = data[splitter:]
+
+        # train
         X = train_data.iloc[:, :-1].values
         y = train_data[train_data.columns.to_list()[-1]]
-        # print(X)
-        # print(y)
+        # test
+        X_test = test_data.iloc[:, :-1].values
+        y_test = test_data[train_data.columns.to_list()[-1]]
 
         lower = np.min(X, axis=0)
         upper = np.max(X, axis=0)
         n_init = 3
         init_design = init_random_uniform
-        num_iterations = 10
-
-        # # model = RandomForest(rng=None) # TODO fix
-        # model = GaussianProcess(kernel, prior=prior, rng=rng,
-        #                         normalize_output=False, normalize_input=True,
-        #                         lower=None, upper=None)
-        #
-        #
-        # model.train(X, y)
-        # # save model (Random forest)
-        # # save_model(dataset_name, model.__getstate__())
-        #
-        #
-        # acquisition_func = LogEI(model)
-        # max_func = RandomSampling(acquisition_func, lower, upper, rng=None)
-        #
-
-        # bo = BayesianOptimization(objective_func, lower, upper,
-        #                           acquisition_func, model, # trained model?
-        #                           max_func,
-        #                           initial_points=3, rng=None,
-        #                           # эта штука используется, если пустые X_init и Y_init
-        #                           initial_design=init_random_uniform, # this will be changed
-        #                           output_path='optimization_results/' + dataset_name + '/')
-        #
+        n_iterations = 10
         X_init = None # mvp
         Y_init = None # mvp
+
         maximizer = 'random'
         acquisition_func = 'log_ei'
         model_type = 'gp_mcmc'
+
         result_path = ('optimization_results/' + maximizer + '-' +
             acquisition_func + '-' + model_type + '/' + dataset_name)
-
         if not os.path.exists(result_path):
             os.makedirs(result_path)
 
-        results = run_optimization(X, y, objective_function, lower, upper,
-                                        init_design,
-                                        num_iterations=num_iterations,
-                                        X_init=X_init, Y_init=Y_init,
-                                        maximizer=maximizer,
-                                        acquisition_func=acquisition_func,
-                                        model_type=model_type,
-                                        n_init=3, rng=None, output_path=result_path)
+        results = run_optimization(
+            X, y, X_test, y_test, objective_function, lower, upper, init_design,
+            num_iterations=n_iterations, X_init=X_init, Y_init=Y_init,
+            maximizer=maximizer, acquisition_func=acquisition_func,
+            model_type=model_type, n_init=3, rng=None, output_path=result_path)
         json.dump(results, open(os.path.join(result_path, "RESULTS.json"), "w"))
-
-        # test_data = data[splitter:]
-        # mean, var, real = predict(model, test_data)
-        # print(train_data,test_data)
-
-        # plot_predicted(mean, var, real, dataset_name)
 
 
 main()

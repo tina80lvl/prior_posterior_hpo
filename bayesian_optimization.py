@@ -24,9 +24,10 @@ from robo.initial_design import init_latin_hypercube_sampling
 logger = logging.getLogger(__name__)
 
 
-def run_optimization(X, y, objective_function, lower, upper, init_design, num_iterations=30, X_init=None, Y_init=None,
-                          maximizer="random", acquisition_func="log_ei", model_type="gp_mcmc",
-                          n_init=3, rng=None, output_path=None):
+def run_optimization(X, y, X_test, y_test, objective_function, lower, upper, init_design,
+                     num_iterations=30, X_init=None, Y_init=None,
+                     maximizer="random", acquisition_func="log_ei", model_type="gp_mcmc",
+                     n_init=3, rng=None, output_path=None):
     """
     General interface for Bayesian optimization for global black box
     optimization problems.
@@ -112,6 +113,7 @@ def run_optimization(X, y, objective_function, lower, upper, init_design, num_it
         raise ValueError("'{}' is not a valid model".format(model_type))
 
     model.train(X, y)
+    mean, variance = model.predict(X_test)
     # TODO save
 
     if acquisition_func == "ei":
@@ -158,4 +160,7 @@ def run_optimization(X, y, objective_function, lower, upper, init_design, num_it
     results["overhead"] = bo.time_overhead
     results["X"] = [x.tolist() for x in bo.X]
     results["y"] = [y for y in bo.y]
+    results["mean"] = mean.tolist()
+    results["variance"] = variance.tolist()
+    results["real"] = y_test.tolist()
     return results
