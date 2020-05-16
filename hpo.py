@@ -6,11 +6,13 @@ import numpy as np
 import pandas as pd
 import logging
 import json
+import datetime
 # import matplotlib.pyplot as plt
 import datetime
 import pyrfr.regression as reg
 
 from utils import read_dataset
+from utils import get_datasets_list
 from bayesian_optimization import run_optimization
 
 from robo.priors.default_priors import DefaultPrior
@@ -56,26 +58,15 @@ def predict(model, test_data):
 
     return mean_pred, var_pred, y
 
-def plot_predicted(mean, variance, real, name):
-    plt.plot(mean, linestyle='dashed', color="red", label='mean')
-    plt.plot(variance, linestyle='solid', color="blue", label='variance')
-    plt.plot(real, linestyle='solid', color="green", label='real')
-    plt.xlabel('Points to predict')
-    plt.legend()
-    time = datetime.datetime.now().strftime('-%H-%M-%S')
-    plt.savefig('png/' + name + time + '.png')
-    plt.clf()
-
 # TODO remove
 def objective_func(x):
     y = (x-0.5) ** 2
     return y[0]
 
 def main():
-    # logging.basicConfig(level=logging.INFO)
+    logging.basicConfig(filename=datetime.datetime.now().strftime('%Y-%m-%d-%H:%M:%S')+'-training.log', level=logging.INFO)
 
-    datasets = ['small']
-    # datasets = ['olivetti', 'umist', 'poker', 'eating', 'mouse', 'fashion']
+    datasets = get_datasets_list('datasets/')
     for dataset_name in datasets:
         data = read_dataset('datasets/', dataset_name + '.csv')
         splitter = math.ceil(0.6 * len(data))
@@ -98,21 +89,25 @@ def main():
         X_init = None # mvp
         Y_init = None # mvp
 
-        maximizer = 'random'
-        acquisition_func = 'log_ei'
-        model_type = 'gp_mcmc'
+        maximizers = ['random', 'scipy', 'differential_evolution']
+        acquisition_funcs = ['ei', 'log_ei', 'lcb', 'pi']
+        # TODO fix rf, gp_mcmc, bohamiann, dngo
+        model_types = ['gp']
 
-        result_path = ('optimization_results/' + maximizer + '-' +
-            acquisition_func + '-' + model_type + '/' + dataset_name)
-        if not os.path.exists(result_path):
-            os.makedirs(result_path)
+        for maximizer in maximizers:
+            for acquisition_func in acquisition_funcs:
+                for model_type in model_types:
+                    result_path = ('optimization_results/' + maximizer + '-' +
+                        acquisition_func + '-' + model_type + '/' + dataset_name)
+                    if not os.path.exists(result_path):
+                        os.makedirs(result_path)
 
-        results = run_optimization(
-            X, y, X_test, y_test, objective_function, lower, upper, init_design,
-            num_iterations=n_iterations, X_init=X_init, Y_init=Y_init,
-            maximizer=maximizer, acquisition_func=acquisition_func,
-            model_type=model_type, n_init=3, rng=None, output_path=result_path)
-        json.dump(results, open(os.path.join(result_path, "RESULTS.json"), "w"))
+                    results = run_optimization(
+                        X, y, X_test, y_test, objective_function, lower, upper, init_design,
+                        num_iterations=n_iterations, X_init=X_init, Y_init=Y_init,
+                        maximizer=maximizer, acquisition_func=acquisition_func,
+                        model_type=model_type, n_init=3, rng=None, output_path=result_path)
+                    json.dump(results, open(os.path.join(result_path, 'RESULTS.json'), 'w'))
 
 
 main()
