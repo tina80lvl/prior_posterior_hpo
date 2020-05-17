@@ -9,7 +9,6 @@ import json
 import datetime
 # import matplotlib.pyplot as plt
 import datetime
-import pyrfr.regression as reg
 
 from utils import read_dataset
 from utils import get_datasets_list
@@ -85,7 +84,7 @@ def main():
         upper = np.max(X, axis=0)
         n_init = 3
         init_design = init_random_uniform
-        n_iterations = 10
+        n_iterations = 100
         X_init = None # mvp
         Y_init = None # mvp
 

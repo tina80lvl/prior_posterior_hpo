@@ -8,7 +8,7 @@ from robo.priors.default_priors import DefaultPrior
 from robo.models.wrapper_bohamiann import WrapperBohamiann
 from robo.models.gaussian_process import GaussianProcess
 from robo.models.gaussian_process_mcmc import GaussianProcessMCMC
-from robo.models.random_forest import RandomForest
+# from robo.models.random_forest import RandomForest
 from robo.maximizers.scipy_optimizer import SciPyOptimizer
 from robo.maximizers.random_sampling import RandomSampling
 from robo.maximizers.differential_evolution import DifferentialEvolution
@@ -66,9 +66,13 @@ def run_optimization(X, y, X_test, y_test, objective_function, lower, upper, ini
     -------
         dict with all results
     """
-    assert upper.shape[0] == lower.shape[0], "Dimension miss match"
-    assert np.all(lower < upper), "Lower bound >= upper bound"
-    assert n_init <= num_iterations, "Number of initial design point has to be <= than the number of iterations"
+    try:
+        assert upper.shape[0] == lower.shape[0], "Dimension miss match"
+        assert np.all(lower < upper), "Lower bound >= upper bound"
+        assert n_init <= num_iterations, "Number of initial design point has to be <= than the number of iterations"
+    except AssertionError as error:
+        logging.error(error)
+        return None
 
     if rng is None:
         rng = np.random.RandomState(np.random.randint(0, 10000))
@@ -100,8 +104,8 @@ def run_optimization(X, y, X_test, y_test, objective_function, lower, upper, ini
                                     normalize_output=False,
                                     rng=rng, lower=lower, upper=upper)
 
-    elif model_type == "rf":
-        model = RandomForest(rng=rng)
+  #  elif model_type == "rf":
+  #      model = RandomForest(rng=rng)
 
     elif model_type == "bohamiann":
         model = WrapperBohamiann()
