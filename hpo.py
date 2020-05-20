@@ -65,7 +65,8 @@ def objective_func(x):
 def main():
     logging.basicConfig(filename=datetime.datetime.now().strftime('%Y-%m-%d-%H:%M:%S')+'-training.log', level=logging.INFO)
 
-    datasets = get_datasets_list('datasets/')
+    datasets = ['rmftsa_sleepdata', 'wall-robot-navigation', 'volcanoes-a1', 'mfeat-fourier', 'tamilnadu-electricity', 'jungle_chess_2pcs_raw_endgame_complete', 'heart-switzerland', 'gas-drift-different-concentrations', 'autoUniv-au7-500', 'jungle_chess_2pcs_endgame_panther_elephant', 'leaf', 'PopularKids', 'mfeat-karhunen', 'diggle_table_a2', 'semeion', 'desharnais', 'teachingAssistant', 'collins', 'volcanoes-a3', 'artificial-characters', 'volcanoes-a4', 'glass', 'nursery', 'shuttle', 'segment', 'heart-long-beach', 'vertebra-column', 'cnae-9', 'jannis', 'eating', 'wine-quality-white', 'vehicle', 'ecoli', 'SVHN_small', 'eye_movements', 'seeds', 'car', 'fabert', 'breast-tissue', 'thyroid-allbp', 'gas-drift', 'mfeat-factors', 'volcanoes-d1', 'har', 'satimage', 'Fashion-MNIST', 'seismic-bumps', 'pokerhand', 'helena', 'thyroid-allhyper', 'wine', 'balance-scale', 'robert', 'microaggregation2', 'steel-plates-fault', 'tae', 'mfeat-pixel', 'gina_prior2', 'synthetic_control', 'cmc', 'energy-efficiency', 'iris', 'yeast', 'fars', 'abalone', 'prnn_viruses', 'Indian_pines', 'covertype', 'GTSRB-HOG03', 'JapaneseVowels', 'user-knowledge', 'spectrometer', 'hayes-roth', 'robot-failures-lp5', 'prnn_fglass', 'waveform-5000', 'zoo', 'cardiotocography', 'mfeat-morphological', 'LED-display-domain-7digit', 'AP_Endometrium_Breast', 'ohscal-wc', 'la2s-wc', 'mouseType', 'hepatitisC']
+
     for dataset_name in datasets:
         data = read_dataset('datasets/', dataset_name + '.csv')
         splitter = math.ceil(0.6 * len(data))
@@ -88,8 +89,8 @@ def main():
         X_init = None # mvp
         Y_init = None # mvp
 
-        maximizers = ['random', 'scipy', 'differential_evolution']
-        acquisition_funcs = ['ei', 'log_ei', 'lcb', 'pi']
+        maximizers = ['random']
+        acquisition_funcs = ['log_ei']
         # TODO fix rf, gp_mcmc, bohamiann, dngo
         model_types = ['gp']
 
