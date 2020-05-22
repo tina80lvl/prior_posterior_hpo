@@ -14,7 +14,8 @@ from utils import get_datasets_list
 from objective_function import ML
 
 from robo.priors.default_priors import DefaultPrior
-from robo.fmin.bayesian_optimization import bayesian_optimization
+# from robo.fmin.bayesian_optimization import bayesian_optimization
+from my_bo import bayesian_optimization
 from robo.priors.default_priors import DefaultPrior
 from robo.solver.bayesian_optimization import BayesianOptimization
 # from robo.models.random_forest import RandomForest
@@ -91,5 +92,6 @@ def train_datasets():
     for dataset_name in datasets:
         train_dataset(dataset_name, optimization_runs_per_dataset)
 
-# train_datasets()
-train_dataset('breast-tissue', 10)
+
+train_datasets()
+# train_dataset('breast-tissue', 10)
