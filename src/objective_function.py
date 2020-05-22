@@ -37,6 +37,6 @@ class ML(object):
 
       # calculating F-score
       f_score = f1_score(self.y_val, y_pred, average='macro')
-      logger.debug("F-score: " + str(f_score))
-      
+      logger.debug("(1 - F-score): " + str(f_score))
+
       return 1 - f_score
