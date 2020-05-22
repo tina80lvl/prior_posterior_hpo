@@ -1,0 +1,481 @@
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Evaluate: [21.28993288 93.38133576 39.7226163  71.00608212 87.33965636 47.01357594
+ 39.2365932  58.06169594 50.58383846]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   3.05823433  4.53669149  3.68192071  4.26276554  4.46980461
+  3.85043641  3.66960981  4.06150617  3.92363213 -6.90775528]
+DEBUG:objective_function:F-score: 0.2708333333333333
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.270833 in 0.022674 seconds
+INFO:robo.solver.bayesian_optimization:Evaluate: [80.22136324 32.1749352  69.87989324 68.22001948 65.52354253 83.39484005
+ 20.96297051 71.46689579  6.76838   ]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   4.38478985  3.47118774  4.24677796  4.22273806  4.18240951
+  4.42358644  3.04275757  4.26923435  1.91226177 -6.90775528]
+DEBUG:objective_function:F-score: 0.10612244897959185
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.106122 in 0.030989 seconds
+INFO:robo.solver.bayesian_optimization:Evaluate: [48.22402356 59.23303675 23.71571543 17.6848911   5.08732868 32.5201316
+ 96.03055301 11.83562271 78.23062429]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   3.87585731  4.08147944  3.16613793  2.87271066  1.62675288
+  3.48185933  4.5646664   2.47111386  4.35966119 -6.90775528]
+DEBUG:objective_function:F-score: 0.13320360195360198
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.133204 in 0.018017 seconds
+INFO:robo.solver.bayesian_optimization:Start iteration 3 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.006385
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.148499
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.155205 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [ 4.67235909  2.08087601 92.20952889 12.18991286 34.75757263  6.78296802
+ 17.85026912  2.68817461 99.48105417]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   1.5416641   0.73278897  4.52406348  2.50060879  3.54839747
+  1.91441477  2.88201859  0.98886238  4.59996722 -6.90775528]
+DEBUG:objective_function:F-score: 0.2017791732077446
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.201779 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.010336 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [80.22136324 32.1749352  69.87989324 68.22001948 65.52354253 83.39484005
+ 20.96297051 71.46689579  6.76838   ] with estimated performance 0.106122
+INFO:robo.solver.bayesian_optimization:Start iteration 4 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.006616
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.149818
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.156811 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [ 22.39419092  10.38008115  84.38344518  41.03496633  15.76928355
+  92.67998787 101.91484959  98.69377616  23.87991067]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   3.10880159  2.3398887   4.43537124  3.71442454  2.75806397
+  4.52915257  4.62413766  4.59202189  3.17303755 -6.90775528]
+DEBUG:objective_function:F-score: 0.19852941176470587
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.198529 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.010537 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [80.22136324 32.1749352  69.87989324 68.22001948 65.52354253 83.39484005
+ 20.96297051 71.46689579  6.76838   ] with estimated performance 0.106122
+INFO:robo.solver.bayesian_optimization:Start iteration 5 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.005350
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.149079
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.154676 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [55.22612253  2.5335732   7.69114293 99.28293344 15.48301926 11.62780171
+ 60.81283107 96.72356189 86.95525991]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   4.01143608  0.92963064  2.0400694   4.59797369  2.73974389
+  2.45339893  4.1078008   4.57185703  4.46539373 -6.90775528]
+DEBUG:objective_function:F-score: 0.2234093637454982
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.223409 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.009615 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [80.22136324 32.1749352  69.87989324 68.22001948 65.52354253 83.39484005
+ 20.96297051 71.46689579  6.76838   ] with estimated performance 0.106122
+INFO:robo.solver.bayesian_optimization:Start iteration 6 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.006813
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.148315
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.155432 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [ 94.90830167   7.49334281  13.72712082  62.35790292 104.66234606
+   7.19985805  86.71898078  63.75262914   7.77570711]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   4.55291118  2.014015    2.6193735   4.13289042  4.65073942
+  1.97406131  4.46267278  4.15501042  2.0510044  -6.90775528]
+DEBUG:objective_function:F-score: 0.27164339419978517
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.271643 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.010017 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [80.22136324 32.1749352  69.87989324 68.22001948 65.52354253 83.39484005
+ 20.96297051 71.46689579  6.76838   ] with estimated performance 0.106122
+INFO:robo.solver.bayesian_optimization:Start iteration 7 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.006591
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.148375
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.155218 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [93.40242967 98.50924192 78.74091983 20.53115974  3.59249186 25.74766111
+ 97.38370722 92.08530686  3.14486198]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   4.53691736  4.59015037  4.36616297  3.02194372  1.27884607
+  3.24834379  4.57865892  4.5227154   1.14577    -6.90775528]
+DEBUG:objective_function:F-score: 0.19012605042016806
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.190126 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.009797 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [80.22136324 32.1749352  69.87989324 68.22001948 65.52354253 83.39484005
+ 20.96297051 71.46689579  6.76838   ] with estimated performance 0.106122
+INFO:robo.solver.bayesian_optimization:Start iteration 8 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.005418
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.144251
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.149900 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [30.20157947 42.41158953  1.8682253  21.56416296  3.39986775 99.77660929
+ 52.00552835 19.85615599 10.88904307]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   3.40789422  3.74742166  0.62498894  3.07103281  1.22373653
+  4.60293378  3.95135003  2.98851408  2.38775706 -6.90775528]
+DEBUG:objective_function:F-score: 0.14499389499389498
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.144994 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.010876 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [80.22136324 32.1749352  69.87989324 68.22001948 65.52354253 83.39484005
+ 20.96297051 71.46689579  6.76838   ] with estimated performance 0.106122
+INFO:robo.solver.bayesian_optimization:Start iteration 9 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.005444
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.148576
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.154271 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   4.49122385  4.45315993  1.54559812  2.01849307  3.24685928
+  3.53055202  1.18318231  3.16262298  4.58663309 -6.90775528]
+DEBUG:objective_function:F-score: 0.08774250440917106
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.087743 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.009517 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 10 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.005529
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.151818
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.157608 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [ 88.85527571  14.59019063  39.81431983 104.72925069 104.51354339
+  79.78631117 101.02270358  25.36829177  97.80309312]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   4.48700893  2.68034943  3.68422664  4.65137846  4.64931666
+  4.37935195  4.61534528  3.23350004  4.5829562  -6.90775528]
+DEBUG:objective_function:F-score: 0.2712962962962963
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.271296 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.010985 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 11 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.005629
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.149534
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.155408 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [87.08168467 57.28015846 85.63463209 27.19763952 22.02157288 97.55869849
+ 45.20792383  3.33478872 79.03203053]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   4.46684658  4.04795429  4.45008978  3.30313019  3.09202256
+  4.58045423  3.81127238  1.20440933  4.36985322 -6.90775528]
+DEBUG:objective_function:F-score: 0.14956140350877195
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.149561 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.009728 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 12 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.005408
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.149931
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.155580 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [22.91009206 84.70355818 86.2293821   9.3028381  21.25874434 31.29428985
+ 21.3971107   1.03936512  3.05726536]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   3.13157751  4.43915761  4.45701098  2.23031953  3.05676831
+  3.44343565  3.0632559   0.03861006  1.11752084 -6.90775528]
+DEBUG:objective_function:F-score: 0.15669425665002842
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.156694 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.009588 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 13 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.005549
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.168199
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.174054 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [  6.12211161  92.83107484  27.69533147  10.7313352    3.71449624
+  92.58495217  22.36894064 100.50076668  90.0062766 ]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   1.81190707  4.53078144  3.32126386  2.37316798  1.31224307
+  4.52812662  3.10767342  4.61016536  4.49987941 -6.90775528]
+DEBUG:objective_function:F-score: 0.13030753968253966
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.130308 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.031847 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 14 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.010352
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.146948
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.157657 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [93.19953601 23.67420895 87.7821656  13.9228982  39.45981256 19.99236456
+  1.00436211 74.97684037 59.63598296]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.50407740e+00  4.53474274e+00  3.16438623e+00  4.47485835e+00
+  2.63353484e+00  3.67528275e+00  2.99535043e+00  4.35262674e-03
+  4.31717927e+00  4.08825913e+00 -6.90775528e+00]
+DEBUG:objective_function:F-score: 0.13078049401578815
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.130780 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.010327 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 15 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.006189
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.153420
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.159889 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [ 94.72766879   4.48571366   2.76227079   6.6659005   72.16094779
+ 100.77671131  83.42428841  59.56723412  90.6672678 ]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   4.55100613  1.50089761  1.01605309  1.89700505  4.27889901
+  4.61290729  4.42393949  4.08710566  4.50719641 -6.90775528]
+DEBUG:objective_function:F-score: 0.23206205559146736
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.232062 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.010597 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 16 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.005569
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.146218
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.152050 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [31.38062451 14.52632934 10.51032087 99.61680294  7.07612457 15.56612087
+ 83.20692534  2.05632186  8.86743583]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   3.44619065  2.67596282  2.35235771  4.60133085  1.95672638
+  2.74509681  4.42133058  0.72091888  2.18238567 -6.90775528]
+DEBUG:objective_function:F-score: 0.17013963480128894
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.170140 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.010549 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 17 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.005589
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.151207
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.157044 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [81.49701482 72.78627365  5.77289445 95.92089882  8.81355133 96.72995187
+ 66.29755588  1.45674413 28.57481834]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   4.40056639  4.28752739  1.75317359  4.56352388  2.17629046
+  4.57192309  4.19415303  0.3762039   3.35252585 -6.90775528]
+DEBUG:objective_function:F-score: 0.20138260432378077
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.201383 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.010903 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 18 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.005699
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.150961
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.156904 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [  7.40885422   3.9284059   88.20447105 104.59426895  28.88598423
+  50.487618    12.0553673  101.20625519  33.58902353]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   2.0026758   1.36823372  4.47965765  4.65008876  3.3633565
+  3.92172812  2.48950998  4.61716057  3.51419933 -6.90775528]
+DEBUG:objective_function:F-score: 0.1882832080200501
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.188283 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.010059 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 19 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.005667
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.151353
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.157263 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [ 9.24982754  3.26724592 70.52155687 38.13341805 88.38745914 66.51177133
+  6.56373431 25.02347535  3.05556348]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   2.22460491  1.1839474   4.25591843  3.64109101  4.48173009
+  4.19737894  1.88155969  3.2198144   1.11696402 -6.90775528]
+DEBUG:objective_function:F-score: 0.27049216447712693
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.270492 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.009672 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 20 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.005563
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.153300
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.159134 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [ 94.07789347 101.35027606  79.56714777  69.05639861  95.08868987
+  65.24509574  95.27720137 101.5541127   85.34802115]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   4.54412309  4.6185826   4.37660129  4.23492354  4.55481003
+  4.17815088  4.55679055  4.62059179  4.44673726 -6.90775528]
+DEBUG:objective_function:F-score: 0.16041339612768185
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.160413 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.009570 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 21 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.006374
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.157170
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.163971 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [83.90148526 90.61970708  8.53324689 92.17304454  7.24362478 99.31812051
+ 98.13748569 97.85993729 70.33529609]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   4.42964332  4.50667171  2.14396993  4.52366773  1.98012174
+  4.59832804  4.58636941  4.58353725  4.25327375 -6.90775528]
+DEBUG:objective_function:F-score: 0.22217261904761904
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.222173 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.010000 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 22 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.008024
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.149490
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.157828 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [ 84.54196773  14.15320481  93.79728828 102.65334967  65.03968605
+   3.71963384  83.65834583  21.76780097  15.50718341]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   4.43724807  2.64994109  4.54113595  4.63135777  4.17499764
+  1.31362523  4.42674119  3.08043186  2.74130336 -6.90775528]
+DEBUG:objective_function:F-score: 0.23965950016370183
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.239660 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.009848 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 23 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.006183
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.148385
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.154846 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [  8.6552722   98.94415546  90.28078892 101.09719822  25.25140128
+   9.12549869  72.82951185  69.35960253  70.310495  ]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   2.15816864  4.5945556   4.50292469  4.61608241  3.22888165
+  2.21107255  4.28812126  4.2393046   4.25292108 -6.90775528]
+DEBUG:objective_function:F-score: 0.2449779911964786
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.244978 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.009786 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 24 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.006819
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.151320
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.158426 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [  3.1184989   80.35486736  87.80900496   3.40103339  99.90087763
+  64.15330588   6.27190903 102.45854903  87.84902481]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   1.13735176  4.38645267  4.47516406  1.22407932  4.60417847
+  4.16127562  1.83608078  4.62945832  4.47561971 -6.90775528]
+DEBUG:objective_function:F-score: 0.232334229238254
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.232334 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.009884 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 25 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.005956
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.158878
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.194869 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [ 91.28115032  92.46111457  24.00393825  41.48555029 100.6932897
+ 102.21936523  55.39011736  31.05811683   9.39356457]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   4.51394431  4.52678817  3.17821791  3.72534518  4.61207916
+  4.62712114  4.01440119  3.43586019  2.24002483 -6.90775528]
+DEBUG:objective_function:F-score: 0.2898860398860399
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.289886 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.012848 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 26 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.006119
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.156208
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.162629 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [93.95513348 45.14372113 23.98687885 99.5088498  15.93322985 24.75184763
+  1.42933798 42.24301676 20.93234853]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   4.54281736  3.8098512   3.17750697  4.60024658  2.76840686
+  3.20890014  0.35721138  3.74343906  3.04129574 -6.90775528]
+DEBUG:objective_function:F-score: 0.14802284550183709
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.148023 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.009700 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 27 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.005651
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.154562
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.160547 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [ 27.33678378  94.64437792  45.58625421  97.28454712   2.76093318
+  82.44876292   8.02756054  29.80045455 104.35224447]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   3.30823319  4.55012648  3.81960623  4.57764016  1.01556873
+  4.41217704  2.08288069  3.39452365  4.64777214 -6.90775528]
+DEBUG:objective_function:F-score: 0.19799498746867167
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.197995 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.009899 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 28 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.005809
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.152577
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.158654 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [85.17216556 31.81844025 20.23087576  4.12213559 18.01485757 88.39079608
+  2.47873466 80.09346139  4.30847885]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   4.44467469  3.460046    3.00720994  1.41637138  2.89119684
+  4.48176785  0.90774821  4.38319422  1.46058491 -6.90775528]
+DEBUG:objective_function:F-score: 0.11507936507936509
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.115079 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.013854 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Start iteration 29 ... 
+INFO:robo.solver.bayesian_optimization:Train model...
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   0.          0.          0.          0.          0.
+  0.          0.          0.          0.         -6.90775528]
+INFO:robo.solver.bayesian_optimization:Time to train the model: 0.008799
+INFO:robo.solver.bayesian_optimization:Maximize acquisition function...
+INFO:robo.solver.bayesian_optimization:Time to maximize the acquisition function: 0.175677
+INFO:robo.solver.bayesian_optimization:Optimization overhead was 0.184801 seconds
+INFO:robo.solver.bayesian_optimization:Next candidate [94.41373142 80.65761539 53.59219385 96.39521155 60.08636055 87.91685924
+  7.57610531 97.21622597 96.11063916]
+DEBUG:robo.models.gaussian_process:GP Hyperparameters: [-1.5040774   4.54768652  4.39021323  3.98140342  4.56845653  4.09578287
+  4.47639159  2.02499926  4.57693763  4.56550002 -6.90775528]
+DEBUG:objective_function:F-score: 0.12891156462585035
+INFO:robo.solver.bayesian_optimization:Configuration achieved a performance of 0.128912 
+INFO:robo.solver.bayesian_optimization:Evaluation of this configuration took 0.009877 seconds
+INFO:robo.solver.bayesian_optimization:Current incumbent [89.23058372 85.89794718  4.69077644  7.52697379 25.70946663 34.14280998
+  3.26474714 23.6325022  98.16336547] with estimated performance 0.087743
+INFO:robo.solver.bayesian_optimization:Return [89.23058371608862, 85.89794717936883, 4.6907764415957045, 7.52697378863978, 25.70946662703324, 34.14280998245954, 3.264747136569567, 23.632502196287675, 98.16336546613032] as incumbent with error 0.087743 
