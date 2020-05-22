@@ -27,6 +27,12 @@ def get_results_fields(data):
     return (incumbents, x_opt, f_opt, incumbent_values, runtime,
         overhead, X, y, mean, variance, real)
 
+def save_model(name, model):
+    print('Saving model:  %s' % name)
+    f = open('saved_models/' + name + '_model.txt', 'w')
+    f.write(model)
+    f.close()
+
 def read_result(dir_name):
     with open(dir_name + '/RESULTS.json', 'r') as read_file:
         data = json.load(read_file)
