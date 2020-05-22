@@ -1,16 +1,22 @@
+from sklearn.metrics import f1_score
+
 class ML(object):
-   def init(self, model_class, x_train, y_train, x_val, y_val):
-      self.model_class = model_class
-      self.x_train = x_train
+   def __init__(self, model, X_train, y_train, X_val, y_val):
+      self.model = model
+      self.X_train = X_train
       self.y_train = y_train
-      self.x_val = x_val
+      self.X_val = X_val
       self.y_val = y_val
 
-   def call(self, hyper_params):
-      model = self.model_class(kernel=hyper_params[0], prior=hyper_params[1],
-                 noise=hyper_params[2], use_gradients=hyper_params[3],
-                 normalize_output=hyper_params[4], ...)
-      model.fit(x_train, y_train)
-      return model.score(x_val, y_val)
+   def __call__(self, hypers):
+      model = self.model(kernel=hypers[0], prior=hypers[1],
+                 noise=hypers[2], use_gradients=hypers[3],
+                 normalize_output=hypers[4], ...)
 
-objective_function = ML(model_class, x_train, y_train, x_val, y_val)
+      mean, _ = model.predict(X_val)
+      y_pred = np.around(mean)
+      print(y_pred)
+      # calculating F-score
+      f_score = f1_score(self.y_val, y_pred, average='macro')
+      logger.debug("F-score: " + str(f_score))
+      return model.score(x_val, y_val)
