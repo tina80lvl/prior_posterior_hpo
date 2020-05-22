@@ -4,6 +4,8 @@ import numpy as np
 
 from pybnn.dngo import DNGO
 
+from solver.bayesian_optimization import BayesianOptimization
+
 from robo.priors.default_priors import DefaultPrior
 from robo.models.wrapper_bohamiann import WrapperBohamiann
 from robo.models.gaussian_process import GaussianProcess
@@ -12,7 +14,7 @@ from robo.models.gaussian_process_mcmc import GaussianProcessMCMC
 from robo.maximizers.scipy_optimizer import SciPyOptimizer
 from robo.maximizers.random_sampling import RandomSampling
 from robo.maximizers.differential_evolution import DifferentialEvolution
-from robo.solver.bayesian_optimization import BayesianOptimization
+# from robo.solver.bayesian_optimization import BayesianOptimization
 from robo.acquisition_functions.ei import EI
 from robo.acquisition_functions.pi import PI
 from robo.acquisition_functions.log_ei import LogEI
@@ -118,6 +120,18 @@ def run_optimization(X, y, X_test, y_test, objective_function, lower, upper, ini
 
     model.train(X, y)
     mean, variance = model.predict(X_test)
+    # print('mean:', mean)
+    # print('variance:', variance)
+    # sample = model.sample_functions(X_test)
+    # print('sample:', sample)
+    # print('real:', y_test.tolist())
+    #
+    # l_mean, l_variance = model.predict(X)
+    # print('mean:', l_mean)
+    # print('variance:', l_variance)
+    # l_sample = model.sample_functions(X)
+    # print('learned sample:', l_sample)
+    # print('learned real:', y.tolist())
     # TODO save
 
     if acquisition_func == "ei":

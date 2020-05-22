@@ -24,7 +24,9 @@ def plot_predicted(mean, variance, real, dataset_name):
 def present_result(dir_name, dataset_name):
     (incumbents, x_opt, f_opt, incumbent_values, runtime, overhead, X, y,
         mean, variance, real) = read_result(dir_name + dataset_name)
+    # x_opt после каждой итерации
     print('incubments', len(incumbents), len(incumbents[0]))
+    # f_opt после каждой итерации
     print('incumbent_values', len(incumbent_values))
 
     print('runtime', len(runtime))
@@ -33,6 +35,7 @@ def present_result(dir_name, dataset_name):
     print('X', len(X), len(X[0]))
     print('y', len(y))
 
+    # best hyperparameters
     print('x_opt', len(x_opt))
     print('f_opt =', f_opt)
 

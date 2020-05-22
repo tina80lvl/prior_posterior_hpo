@@ -14,6 +14,8 @@ from utils import read_dataset
 from utils import get_datasets_list
 from bayesian_optimization import run_optimization
 
+from sklearn.metrics import f1_score
+
 from robo.priors.default_priors import DefaultPrior
 from robo.solver.bayesian_optimization import BayesianOptimization
 # from robo.models.random_forest import RandomForest
@@ -65,7 +67,8 @@ def objective_func(x):
 def main():
     logging.basicConfig(filename=datetime.datetime.now().strftime('%Y-%m-%d-%H:%M:%S')+'-training.log', level=logging.INFO)
 
-    datasets = get_datasets_list('datasets/')
+    # datasets = get_datasets_list('datasets/')
+    datasets = ['small']
     for dataset_name in datasets:
         data = read_dataset('datasets/', dataset_name + '.csv')
         splitter = math.ceil(0.6 * len(data))
@@ -88,8 +91,8 @@ def main():
         X_init = None # mvp
         Y_init = None # mvp
 
-        maximizers = ['random', 'scipy', 'differential_evolution']
-        acquisition_funcs = ['ei', 'log_ei', 'lcb', 'pi']
+        maximizers = ['random']
+        acquisition_funcs = ['log_ei']
         # TODO fix rf, gp_mcmc, bohamiann, dngo
         model_types = ['gp']
 
@@ -100,12 +103,13 @@ def main():
                         acquisition_func + '-' + model_type + '/' + dataset_name)
                     if not os.path.exists(result_path):
                         os.makedirs(result_path)
+                    my_model = GaussianProcess(....)
+                    my_model.train()
 
-                    results = run_optimization(
-                        X, y, X_test, y_test, objective_function, lower, upper, init_design,
+                    results = bayesian_optimization(objective_function, lower, upper,
                         num_iterations=n_iterations, X_init=X_init, Y_init=Y_init,
-                        maximizer=maximizer, acquisition_func=acquisition_func,
-                        model_type=model_type, n_init=3, rng=None, output_path=result_path)
+                        maximizer='random', acquisition_func='log_ei',
+                        model_type='gp', n_init=3, rng=None, output_path=result_path)
                     json.dump(results, open(os.path.join(result_path, 'RESULTS.json'), 'w'))
 
 
