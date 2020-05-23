@@ -25,6 +25,7 @@ def main():
             # print(dataset_name, type(real), real)
             plot_predicted(mean, variance, real, dataset_name, file_name)
 
+
 def plot_predicted(mean, variance, real, dataset_name, file_name):
     # plt.plot(mean, linestyle='dashed', color="red", label='mean')
     plt.plot(variance, linestyle='solid', color="blue", label='variance')

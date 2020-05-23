@@ -20,13 +20,21 @@ from robo.acquisition_functions.lcb import LCB
 from robo.acquisition_functions.marginalization import MarginalizationGPMCMC
 from robo.initial_design import init_latin_hypercube_sampling
 
-
 logger = logging.getLogger(__name__)
 
 
-def bayesian_optimization(objective_function, lower, upper, num_iterations=30, X_init=None, Y_init=None,
-                          maximizer="random", acquisition_func="log_ei", model_type="gp_mcmc",
-                          n_init=3, rng=None, output_path=None):
+def bayesian_optimization(objective_function,
+                          lower,
+                          upper,
+                          num_iterations=30,
+                          X_init=None,
+                          Y_init=None,
+                          maximizer="random",
+                          acquisition_func="log_ei",
+                          model_type="gp_mcmc",
+                          n_init=3,
+                          rng=None,
+                          output_path=None):
     """
     General interface for Bayesian optimization for global black box
     optimization problems.
@@ -76,8 +84,7 @@ def bayesian_optimization(objective_function, lower, upper, num_iterations=30, X
     n_dims = lower.shape[0]
 
     initial_ls = np.ones([n_dims])
-    exp_kernel = george.kernels.Matern52Kernel(initial_ls,
-                                               ndim=n_dims)
+    exp_kernel = george.kernels.Matern52Kernel(initial_ls, ndim=n_dims)
     kernel = cov_amp * exp_kernel
 
     prior = DefaultPrior(len(kernel) + 1)
@@ -87,17 +94,24 @@ def bayesian_optimization(objective_function, lower, upper, num_iterations=30, X
         n_hypers += 1
 
     if model_type == "gp":
-        model = GaussianProcess(kernel, prior=prior, rng=rng,
-                                normalize_output=False, normalize_input=True,
-                                lower=lower, upper=upper)
+        model = GaussianProcess(kernel,
+                                prior=prior,
+                                rng=rng,
+                                normalize_output=False,
+                                normalize_input=True,
+                                lower=lower,
+                                upper=upper)
     elif model_type == "gp_mcmc":
-        model = GaussianProcessMCMC(kernel, prior=prior,
+        model = GaussianProcessMCMC(kernel,
+                                    prior=prior,
                                     n_hypers=n_hypers,
                                     chain_length=200,
                                     burnin_steps=100,
                                     normalize_input=True,
                                     normalize_output=False,
-                                    rng=rng, lower=lower, upper=upper)
+                                    rng=rng,
+                                    lower=lower,
+                                    upper=upper)
 
     # elif model_type == "rf":
     #     model = RandomForest(rng=rng)
@@ -120,8 +134,8 @@ def bayesian_optimization(objective_function, lower, upper, num_iterations=30, X
     elif acquisition_func == "lcb":
         a = LCB(model)
     else:
-        raise ValueError("'{}' is not a valid acquisition function"
-                         .format(acquisition_func))
+        raise ValueError("'{}' is not a valid acquisition function".format(
+            acquisition_func))
 
     if model_type == "gp_mcmc":
         acquisition_func = MarginalizationGPMCMC(a)
@@ -133,14 +147,22 @@ def bayesian_optimization(objective_function, lower, upper, num_iterations=30, X
     elif maximizer == "scipy":
         max_func = SciPyOptimizer(acquisition_func, lower, upper, rng=rng)
     elif maximizer == "differential_evolution":
-        max_func = DifferentialEvolution(acquisition_func, lower, upper, rng=rng)
+        max_func = DifferentialEvolution(acquisition_func,
+                                         lower,
+                                         upper,
+                                         rng=rng)
     else:
         raise ValueError("'{}' is not a valid function to maximize the "
                          "acquisition function".format(maximizer))
 
-    bo = BayesianOptimization(objective_function, lower, upper,
-                              acquisition_func, model, max_func,
-                              initial_points=n_init, rng=rng,
+    bo = BayesianOptimization(objective_function,
+                              lower,
+                              upper,
+                              acquisition_func,
+                              model,
+                              max_func,
+                              initial_points=n_init,
+                              rng=rng,
                               initial_design=init_latin_hypercube_sampling,
                               output_path=output_path)
 

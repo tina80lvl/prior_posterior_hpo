@@ -9,6 +9,7 @@ from utils import read_dataset
 from utils import read_result
 from utils import get_datasets_list
 
+
 def plot_predicted(mean, variance, real, dataset_name):
     plt.plot(mean, linestyle='dashed', color="red", label='mean')
     plt.plot(variance, linestyle='solid', color="blue", label='variance')
@@ -21,9 +22,10 @@ def plot_predicted(mean, variance, real, dataset_name):
     plt.show()
     plt.clf()
 
+
 def present_result(dir_name, dataset_name):
-    (incumbents, x_opt, f_opt, incumbent_values, runtime, overhead, X, y,
-        mean, variance, real) = read_result(dir_name + dataset_name)
+    (incumbents, x_opt, f_opt, incumbent_values, runtime, overhead, X, y, mean,
+     variance, real) = read_result(dir_name + dataset_name)
     # x_opt после каждой итерации
     print('incubments', len(incumbents), len(incumbents[0]))
     # f_opt после каждой итерации
@@ -45,4 +47,6 @@ def present_result(dir_name, dataset_name):
 
     plot_predicted(mean, variance, real, dataset_name)
 
-present_result('optimization_results/differential_evolution-ei-gp/', 'page-blocks')
+
+present_result('optimization_results/differential_evolution-ei-gp/',
+               'page-blocks')
