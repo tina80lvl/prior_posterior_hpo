@@ -5,6 +5,7 @@ try.py
 plot_ex.py
 datasets/
 png/
+training_logs/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
