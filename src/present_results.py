@@ -41,9 +41,11 @@ def present_result(dir_name, dataset_name):
     print('x_opt', len(x_opt))
     print('f_opt =', f_opt)
 
-    print('mean', len(mean))
-    print('variance', len(variance))
-    print('real', len(real))
+    # plot iteration/score
+
+    # print('mean', len(mean))
+    # print('variance', len(variance))
+    # print('real', len(real))
 
     plot_predicted(mean, variance, real, dataset_name)
 
