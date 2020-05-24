@@ -33,31 +33,33 @@ class ML(object):
         beta_2 = float(hypers[6])
         n_iter_no_change = int(hypers[7])
         logger.debug('Hyperparameters configuration (tuned): [' +
-            str(hidden_layer_sizes) + ' ' + str(alpha) + ' ' + str(learning_rate_init) + ' ' +
-            str(max_iter) + ' ' + str(validation_fraction) + ' ' + str(beta_1) + ' ' + str(beta_2) + ' ' +
-            str(n_iter_no_change) + ']')
-        model = MLPClassifier(hidden_layer_sizes=(hidden_layer_sizes, ),
-                              activation='relu',
-                              solver='adam',
-                              alpha=alpha,
-                              batch_size='auto',
-                              learning_rate='constant',
-                              learning_rate_init=learning_rate_init,
-                              power_t=0.5, # only for 'sgb'
-                              max_iter=max_iter,
-                              shuffle=True,
-                              random_state=None,
-                              tol=1e-4,
-                              verbose=False,
-                              warm_start=False,
-                              momentum=0.9, # only for 'sgb'
-                              nesterovs_momentum=True,
-                              early_stopping=False,
-                              validation_fraction=validation_fraction,
-                              beta_1=beta_1,
-                              beta_2=beta_2,
-                              epsilon=1e-08,
-                              n_iter_no_change=n_iter_no_change)
+                     str(hidden_layer_sizes) + ' ' + str(alpha) + ' ' +
+                     str(learning_rate_init) + ' ' + str(max_iter) + ' ' +
+                     str(validation_fraction) + ' ' + str(beta_1) + ' ' +
+                     str(beta_2) + ' ' + str(n_iter_no_change) + ']')
+        model = MLPClassifier(
+            hidden_layer_sizes=(hidden_layer_sizes, ),
+            activation='relu',
+            solver='adam',
+            alpha=alpha,
+            batch_size='auto',
+            learning_rate='constant',
+            learning_rate_init=learning_rate_init,
+            power_t=0.5,  # only for 'sgb'
+            max_iter=max_iter,
+            shuffle=True,
+            random_state=None,
+            tol=1e-4,
+            verbose=False,
+            warm_start=False,
+            momentum=0.9,  # only for 'sgb'
+            nesterovs_momentum=True,
+            early_stopping=False,
+            validation_fraction=validation_fraction,
+            beta_1=beta_1,
+            beta_2=beta_2,
+            epsilon=1e-08,
+            n_iter_no_change=n_iter_no_change)
         model.fit(self.X_train, self.y_train)
         y_pred = model.predict(self.X_val)
 
