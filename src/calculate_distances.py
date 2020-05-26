@@ -4,8 +4,7 @@ import math
 import json
 import datetime
 
-from utils import read_dataset
-from utils import get_datasets_list
+from utils import read_dataset, get_datasets_list
 
 import pandas as pd
 

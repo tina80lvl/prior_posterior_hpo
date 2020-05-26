@@ -27,6 +27,7 @@ def bayesian_optimization(objective_function,
                           lower,
                           upper,
                           num_iterations=30,
+                          initial_design=init_latin_hypercube_sampling,
                           X_init=None,
                           Y_init=None,
                           maximizer="random",
@@ -163,7 +164,7 @@ def bayesian_optimization(objective_function,
                               max_func,
                               initial_points=n_init,
                               rng=rng,
-                              initial_design=init_latin_hypercube_sampling,
+                              initial_design=initial_design,
                               output_path=output_path)
 
     x_best, f_min = bo.run(num_iterations, X=X_init, y=Y_init)
