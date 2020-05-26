@@ -13,6 +13,12 @@ def read_dataset(dir_name, file_name):
     return dataset
 
 
+def get_distance_between(dataset_name1, dataset_name2):
+    df = pd.read_csv(os.path.join('../', 'datasets-distances.csv'))
+    return float(df.loc[df['dataset1'] == dataset_name1].loc[
+        df['dataset2'] == dataset_name2]['distance'])
+
+
 def get_results_fields(data):
     incumbents = data['incumbents']
     x_opt = data['x_opt']

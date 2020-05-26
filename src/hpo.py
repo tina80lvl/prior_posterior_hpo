@@ -7,7 +7,6 @@ import pandas as pd
 import logging
 import json
 import datetime
-import datetime
 
 from utils import read_dataset
 from utils import get_datasets_list
@@ -31,7 +30,8 @@ logging.basicConfig(filename='../training_logs/' +
                     datetime.datetime.now().strftime('%Y-%m-%d-%H:%M:%S') +
                     '-training-debug.log',
                     level=logging.DEBUG)
-                    
+
+
 def train_dataset(dataset_name, runs):
     data = read_dataset('../datasets/', dataset_name + '.csv')
 
@@ -59,9 +59,11 @@ def train_dataset(dataset_name, runs):
                                 X_val=X_val,
                                 y_val=y_val)
 
-        opt_lower = np.array([1, 0.00001, 0.0001, 50, 0.01, 0.09, 0.0999, 5])  # size: number of hyperparameters
-        opt_upper = np.array([150, 0.01, 0.1, 300, 0.9, 0.9, 0.999, 15])  # size: number of hyperparameters
-        n_init = 3 # number of points for the initial design.
+        opt_lower = np.array([1, 0.00001, 0.0001, 50, 0.01, 0.09, 0.0999,
+                              5])  # size: number of hyperparameters
+        opt_upper = np.array([150, 0.01, 0.1, 300, 0.9, 0.9, 0.999,
+                              15])  # size: number of hyperparameters
+        n_init = 3  # number of points for the initial design.
         init_design = init_random_uniform
 
         n_iterations = 100
@@ -96,7 +98,7 @@ def train_dataset(dataset_name, runs):
 
 def train_datasets():
     datasets = get_datasets_list('../datasets/')
-    optimization_runs_per_dataset = 10
+    optimization_runs_per_dataset = 1
     for dataset_name in datasets:
         train_dataset(dataset_name, optimization_runs_per_dataset)
 
