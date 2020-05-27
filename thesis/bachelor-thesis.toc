@@ -1,0 +1,113 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {russian}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{ВВЕДЕНИЕ}{5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Обзор существующих решений}{7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Определения и ключевые понятия}{7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Обзор классификаторов}{7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Линейная регрессия}{7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Логистическая регрессия}{8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Линейный дискриминантный анализ (LDA)}{8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Деревья принятия решений}{8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Наивный Байесовский классификатор}{8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{K-ближайших соседей (KNN)}{8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Метод опорных векторов (SVM)}{8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Бэггинг и случайный лес (RandomForest)}{8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Бустинг и AdaBoost}{8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Многослойный персептрон (Multilayered perceptron)}{9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Меры оценки качества классификации}{9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Обзор подходов к оптимизации гиперпараметров}{10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Поиск по решётке}{10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Доступные реализации}{10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Достоинства}{10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Недостатки}{10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Случайный поиск}{10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Доступные реализации}{10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Достоинства}{11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Недостатки}{11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Байесовская оптимизация}{11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Доступные реализации}{11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Достоинства}{11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Недостатки}{11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Оптимизация на основе градиентов}{11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Доступные реализации}{12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Достоинства}{12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Недостатки}{12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Эволюционная оптимизация}{12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Доступные реализации}{12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Достоинства}{12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Недостатки}{12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.1}Байесовская оптимизация}{12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Выводы по главе\nobreakspace 1}{12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Предложенное решение}{13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Метрика для определения подобия задач}{13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Параметры для оптимизации}{13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Классификатор}{13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.1.1}Обоснование}{13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.1.2}Набор гиперпараметров}{13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}Целевая функция}{13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.3}Модель оптимизации}{13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Расширение Байесовской оптимизации}{13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Выводы по главе\nobreakspace 2}{13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Анализ полученных результатов}{14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Выводы по главе\nobreakspace 3}{14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{ЗАКЛЮЧЕНИЕ}{15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{16}%
+\defcounter {refsection}{0}\relax 
+\ttl@change@i {\@ne }{chapter}{\appendixPrefix }{}{\contentslabel [ПРИЛОЖЕНИЕ \thecontentslabel .]{\the \appendixPrefix }}{\hspace *{-\the \appendixPrefix }}{\titlerule *[0.5pc]{.}\contentspage }\relax 
+\defcounter {refsection}{0}\relax 
+\ttl@change@v {chapter}{}{}{}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {А}Результаты наивной Байесовской оптимизации}{17}%
+\contentsfinish 

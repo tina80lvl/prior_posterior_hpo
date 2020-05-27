@@ -41,13 +41,13 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="0">
+  <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>thesis.bcf</file>
+      <file>bachelor-thesis.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>thesis.bbl</file>
+      <file>bachelor-thesis.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -69,26 +69,26 @@
       <file>english-gost.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="0">
+  <external package="biblatex" priority="5" active="1">
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>thesis</infile>
+      <infile>bachelor-thesis</infile>
     </cmdline>
     <input>
-      <file>thesis.bcf</file>
+      <file>bachelor-thesis.bcf</file>
     </input>
     <output>
-      <file>thesis.bbl</file>
+      <file>bachelor-thesis.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>thesis.bbl</file>
+      <file>bachelor-thesis.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>thesis.bcf</file>
+      <file>bachelor-thesis.bcf</file>
     </requires>
     <requires type="editable">
-      <file>thesis.bib</file>
+      <file>bachelor-thesis.bib</file>
     </requires>
   </external>
 </requests>

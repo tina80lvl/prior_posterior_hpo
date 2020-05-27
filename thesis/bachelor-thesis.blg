@@ -1,0 +1,41 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'bachelor-thesis.blg'
+[99] biber-darwin:322> INFO - === Wed May 27, 2020, 15:46:34
+[124] Biber.pm:415> INFO - Reading 'bachelor-thesis.bcf'
+[325] Biber.pm:943> INFO - Found 10 citekeys in bib section 0
+[344] Biber.pm:4256> INFO - Processing section 0
+[345] Utils.pm:75> INFO - Globbing data source 'bachelor-thesis.bib'
+[345] Utils.pm:91> INFO - Globbed data source 'bachelor-thesis.bib' to bachelor-thesis.bib
+[360] Biber.pm:4455> INFO - Looking for bibtex format file 'bachelor-thesis.bib' for section 0
+[361] bibtex.pm:1653> INFO - LaTeX decoding ...
+[384] bibtex.pm:1471> INFO - Found BibTeX data source 'bachelor-thesis.bib'
+[451] Utils.pm:304> WARN - I didn't find a database entry for 'leite2010active' (section 0)
+[451] Utils.pm:304> WARN - I didn't find a database entry for 'hutter2011sequential' (section 0)
+[451] Utils.pm:304> WARN - I didn't find a database entry for 'thornton2013auto' (section 0)
+[451] Utils.pm:304> WARN - I didn't find a database entry for 'feurer2015efficient' (section 0)
+[451] Utils.pm:304> WARN - I didn't find a database entry for 'feurer2018practical' (section 0)
+[457] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[457] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[458] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[458] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[458] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[458] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[459] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[459] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[459] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[459] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[459] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[460] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[460] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[460] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[461] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[461] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[461] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[461] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[467] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[467] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[467] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'ru-RU'
+[467] Biber.pm:4090> INFO - No sort tailoring available for locale 'ru-RU'
+[478] bbl.pm:652> INFO - Writing 'bachelor-thesis.bbl' with encoding 'UTF-8'
+[483] bbl.pm:755> INFO - Output to bachelor-thesis.bbl
+[484] Biber.pm:128> INFO - WARNINGS: 23
