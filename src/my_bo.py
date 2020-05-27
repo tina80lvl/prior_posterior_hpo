@@ -2,17 +2,20 @@ import logging
 import george
 import numpy as np
 
+from GP import GaussianProcess
+from BO import BayesianOptimization
+
 from pybnn.dngo import DNGO
 
 from robo.priors.default_priors import DefaultPrior
 from robo.models.wrapper_bohamiann import WrapperBohamiann
-from robo.models.gaussian_process import GaussianProcess
+# from robo.models.gaussian_process import GaussianProcess
 from robo.models.gaussian_process_mcmc import GaussianProcessMCMC
 # from robo.models.random_forest import RandomForest
 from robo.maximizers.scipy_optimizer import SciPyOptimizer
 from robo.maximizers.random_sampling import RandomSampling
 from robo.maximizers.differential_evolution import DifferentialEvolution
-from robo.solver.bayesian_optimization import BayesianOptimization
+# from robo.solver.bayesian_optimization import BayesianOptimization
 from robo.acquisition_functions.ei import EI
 from robo.acquisition_functions.pi import PI
 from robo.acquisition_functions.log_ei import LogEI

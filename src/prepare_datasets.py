@@ -24,5 +24,5 @@ def prepare_all():
 
 
 # prepare_dataset('collins')
-# prepare_dataset('jungle_chess_2pcs_endgame_panther_elephant')
-prepare_all()
+prepare_dataset('zoo')
+# prepare_all()
