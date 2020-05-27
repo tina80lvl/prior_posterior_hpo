@@ -8,31 +8,10 @@ import logging
 import json
 import datetime
 
-from utils import read_dataset, get_datasets_list, get_distance_between
-from my_bo import bayesian_optimization
+from utils import read_dataset, get_datasets_list, get_distance_between, read_full_result, read_opt_result
 from objective_function import ML
 
 logger = logging.getLogger(__name__)
-
-
-class InitPosterior(object):
-    def __init__(self, X_nearest, y_nearest):
-        # self.n_nearest = X_nearest.shape[0]
-        self.X_nearest = X_nearest
-        self.y_nearest = y_nearest
-
-    def __call__(self, lower, upper, n_points, rng=None):
-        n_dims = lower.shape[0]
-        # Generate bounds for random number generator
-        s_bounds = np.array([
-            np.linspace(lower[i], upper[i], n_points + 1)
-            for i in range(n_dims)
-        ])
-        s_lower = s_bounds[:, :-1]
-        s_upper = s_bounds[:, 1:]
-        print(s_bounds)
-        print(s_lower)
-        print(s_upper)
 
 
 def get_nearest_names(n, problem_name):
@@ -42,19 +21,22 @@ def get_nearest_names(n, problem_name):
     return nearests[1:(n + 1)]
 
 
-def calc_local_dz(X, y_problem, y_neighbor):
+def calc_local_dz(X_problem, y_problem, neighbor_name):
     dz = []
-    for i in range(y_problem.shape[0]):
-        dz.append(abs(y_problem[i] - y_neighbor[i]))
+    dir = '../optimization_results/f-score/random-log_ei-gp/'
+    X_neigbor, y_neighbor = read_opt_result(dir + neighbor_name)
+    X_neigbor = np.array(X_neigbor)
+    dz.append(abs(y_problem[0] - y_neighbor))
+
     return dz
 
 
-def calc_reliability(problem_name, neighbor_name, X, y_problem, y_neighbor,
+def calc_reliability(problem_name, neighbor_name, X_problem, y_problem,
                      iteration):
     t = iteration
     alpha = 0.375
     d = get_distance_between(problem_name, neighbor_name)
-    dz_local = calc_local_dz(X, y_problem, y_neighbor)
+    dz_local = calc_local_dz(X_problem, y_problem, neighbor_name)
     dz_global = np.average(dz_local)
     # here d and dz_global are already calculated kernels
     R = alpha**t - d + (1 - alpha**t) * dz_global

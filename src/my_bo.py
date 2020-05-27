@@ -27,6 +27,8 @@ logger = logging.getLogger(__name__)
 
 
 def bayesian_optimization(objective_function,
+                          dataset_name,
+                          neighbor_name,
                           lower,
                           upper,
                           num_iterations=30,
@@ -99,6 +101,8 @@ def bayesian_optimization(objective_function,
 
     if model_type == "gp":
         model = GaussianProcess(kernel,
+                                dataset_name,
+                                neighbor_name,
                                 prior=prior,
                                 rng=rng,
                                 normalize_output=False,

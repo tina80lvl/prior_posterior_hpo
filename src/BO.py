@@ -7,14 +7,17 @@ import numpy as np
 from robo.initial_design.init_random_uniform import init_random_uniform
 from robo.solver.base_solver import BaseSolver
 
-
 logger = logging.getLogger(__name__)
 
 
 class BayesianOptimization(BaseSolver):
-
-    def __init__(self, objective_func, lower, upper,
-                 acquisition_func, model, maximize_func,
+    def __init__(self,
+                 objective_func,
+                 lower,
+                 upper,
+                 acquisition_func,
+                 model,
+                 maximize_func,
                  initial_design=init_random_uniform,
                  initial_points=3,
                  output_path=None,
@@ -116,7 +119,8 @@ class BayesianOptimization(BaseSolver):
                                        self.upper,
                                        self.init_points,
                                        rng=self.rng)
-            time_overhead = (time.time() - start_time_overhead) / self.init_points
+            time_overhead = (time.time() -
+                             start_time_overhead) / self.init_points
 
             for i, x in enumerate(init):
 
@@ -130,8 +134,9 @@ class BayesianOptimization(BaseSolver):
                 self.time_func_evals.append(time.time() - start_time)
                 self.time_overhead.append(time_overhead)
 
-                logger.info("Configuration achieved a performance of %f in %f seconds",
-                            y[i], self.time_func_evals[i])
+                logger.info(
+                    "Configuration achieved a performance of %f in %f seconds",
+                    y[i], self.time_func_evals[i])
 
                 # Use best point seen so far as incumbent
                 best_idx = np.argmin(y)
@@ -167,7 +172,8 @@ class BayesianOptimization(BaseSolver):
             new_x = self.choose_next(self.X, self.y, do_optimize)
 
             self.time_overhead.append(time.time() - start_time)
-            logger.info("Optimization overhead was %f seconds", self.time_overhead[-1])
+            logger.info("Optimization overhead was %f seconds",
+                        self.time_overhead[-1])
             logger.info("Next candidate %s", str(new_x))
 
             # Evaluate
@@ -176,7 +182,8 @@ class BayesianOptimization(BaseSolver):
             self.time_func_evals.append(time.time() - start_time)
 
             logger.info("Configuration achieved a performance of %f ", new_y)
-            logger.info("Evaluation of this configuration took %f seconds", self.time_func_evals[-1])
+            logger.info("Evaluation of this configuration took %f seconds",
+                        self.time_func_evals[-1])
 
             # Extend the data
             self.X = np.append(self.X, new_x[None, :], axis=0)
@@ -223,11 +230,13 @@ class BayesianOptimization(BaseSolver):
         """
 
         if X is None and y is None:
-            x = self.initial_design(self.lower, self.upper, 1, rng=self.rng)[0, :]
+            x = self.initial_design(self.lower, self.upper, 1,
+                                    rng=self.rng)[0, :]
 
         elif X.shape[0] == 1:
             # We need at least 2 data points to train a GP
-            x = self.initial_design(self.lower, self.upper, 1, rng=self.rng)[0, :]
+            x = self.initial_design(self.lower, self.upper, 1,
+                                    rng=self.rng)[0, :]
 
         else:
             try:
@@ -244,7 +253,8 @@ class BayesianOptimization(BaseSolver):
             t = time.time()
             x = self.maximize_func.maximize()
 
-            logger.info("Time to maximize the acquisition function: %f", (time.time() - t))
+            logger.info("Time to maximize the acquisition function: %f",
+                        (time.time() - t))
 
         return x
 
@@ -258,4 +268,7 @@ class BayesianOptimization(BaseSolver):
         data["time_func_eval"] = self.time_func_evals[it]
         data["iteration"] = it
 
-        json.dump(data, open(os.path.join(self.output_path, "robo_iter_%d.json" % it), "w"))
+        json.dump(
+            data,
+            open(os.path.join(self.output_path, "robo_iter_%d.json" % it),
+                 "w"))

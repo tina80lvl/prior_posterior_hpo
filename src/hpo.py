@@ -9,7 +9,8 @@ import json
 import datetime
 
 from utils import read_dataset, get_datasets_list, get_distance_between
-from define_neighbor import InitPosterior
+from define_neighbor import get_nearest_names
+from init_neighbors import InitPosterior
 from my_bo import bayesian_optimization
 from objective_function import ML
 
@@ -31,7 +32,7 @@ logging.basicConfig(filename='../training_logs/' +
                     level=logging.DEBUG)
 
 
-def train_dataset(dataset_name, initial_design, runs=1):
+def train_dataset(dataset_name, initial_design, mode, runs=1):
     data = read_dataset('../datasets/', dataset_name + '.csv')
 
     X_train, X_val, y_train, y_val = train_test_split(
@@ -47,10 +48,10 @@ def train_dataset(dataset_name, initial_design, runs=1):
                                 X_val=X_val,
                                 y_val=y_val)
 
-        opt_lower = np.array([1, 0.00001, 0.0001, 50, 0.01, 0.09, 0.0999,
-                              5])  # size: number of hyperparameters
-        opt_upper = np.array([150, 0.01, 0.1, 300, 0.9, 0.9, 0.999,
-                              15])  # size: number of hyperparameters
+        # size: number of hyperparameters
+        opt_lower = np.array([1, 0.00001, 0.0001, 50, 0.01, 0.09, 0.0999, 5])
+        opt_upper = np.array([150, 0.01, 0.1, 300, 0.9, 0.9, 0.999, 15])
+
         n_init = 3  # number of points for the initial design.
         init_design = init_latin_hypercube_sampling
 
@@ -62,13 +63,17 @@ def train_dataset(dataset_name, initial_design, runs=1):
         maximizer = 'random'
         acquisition_func = 'log_ei'
         model_type = 'gp'
-        result_path = ('../optimization_results/f-score/' + maximizer + '-' +
-                       acquisition_func + '-' + model_type + '/' +
-                       dataset_name + '/run-' + str(i))
+        result_path = ('../optimization_results/' + mode + '/f-score/' +
+                       maximizer + '-' + acquisition_func + '-' + model_type +
+                       '/' + dataset_name + '/run-' + str(i))
         if not os.path.exists(result_path):
             os.makedirs(result_path)
 
+        d_name = 'popularkids'
+        neighbor = get_nearest_names(1, d_name)[0]
         results = bayesian_optimization(objective_function,
+                                        d_name,
+                                        neighbor,
                                         opt_lower,
                                         opt_upper,
                                         num_iterations=n_iterations,
@@ -85,10 +90,10 @@ def train_dataset(dataset_name, initial_design, runs=1):
                                 'w'))
 
 
-def train_datasets(initial_design, optimization_runs_per_dataset=1):
+def train_datasets(initial_design, mode, optimization_runs_per_dataset=1):
     datasets = get_datasets_list('../datasets/')
     for dataset_name in datasets:
-        train_dataset(dataset_name, initial_design,
+        train_dataset(dataset_name, initial_design, mode,
                       optimization_runs_per_dataset)
 
 
@@ -97,5 +102,6 @@ def train_datasets(initial_design, optimization_runs_per_dataset=1):
 
 # with posterior
 # train_dataset('name', InitPosterior())
-
-train_dataset('PopularKids', init_latin_hypercube_sampling)
+neighbors = get_nearest_names(10, 'popularkids')
+init_neigbors = InitPosterior(neighbors)
+train_dataset('PopularKids', init_neigbors, 'posterior-init/try3-2')

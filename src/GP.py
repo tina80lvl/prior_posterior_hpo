@@ -1,9 +1,10 @@
-
 import logging
 import george
 import numpy as np
 
 from scipy import optimize
+
+from define_neighbor import calc_reliability
 
 from robo.util import normalization
 from robo.models.base_model import BaseModel
@@ -12,12 +13,18 @@ logger = logging.getLogger(__name__)
 
 
 class GaussianProcess(BaseModel):
-
-    def __init__(self, kernel, prior=None,
-                 noise=1e-3, use_gradients=False,
+    def __init__(self,
+                 kernel,
+                 dataset_name,
+                 neighbor_name,
+                 prior=None,
+                 noise=1e-3,
+                 use_gradients=False,
                  normalize_output=False,
                  normalize_input=True,
-                 lower=None, upper=None, rng=None):
+                 lower=None,
+                 upper=None,
+                 rng=None):
         """
         Interface to the george GP library. The GP hyperparameter are obtained
         by optimizing the marginal log likelihood.
@@ -65,6 +72,8 @@ class GaussianProcess(BaseModel):
         self.is_trained = False
         self.lower = lower
         self.upper = upper
+        self.dataset_name = dataset_name
+        self.neighbor_name = neighbor_name
 
     @BaseModel._check_shapes_train
     def train(self, X, y, do_optimize=True):
@@ -88,15 +97,18 @@ class GaussianProcess(BaseModel):
 
         if self.normalize_input:
             # Normalize input to be in [0, 1]
-            self.X, self.lower, self.upper = normalization.zero_one_normalization(X, self.lower, self.upper)
+            self.X, self.lower, self.upper = normalization.zero_one_normalization(
+                X, self.lower, self.upper)
         else:
             self.X = X
 
         if self.normalize_output:
             # Normalize output to have zero mean and unit standard deviation
-            self.y, self.y_mean, self.y_std = normalization.zero_mean_unit_var_normalization(y)
+            self.y, self.y_mean, self.y_std = normalization.zero_mean_unit_var_normalization(
+                y)
             if self.y_std == 0:
-                raise ValueError("Cannot normalize output. All targets have the same value")
+                raise ValueError(
+                    "Cannot normalize output. All targets have the same value")
         else:
             self.y = y
 
@@ -114,7 +126,13 @@ class GaussianProcess(BaseModel):
             self.hypers = np.append(self.hypers, np.log(self.noise))
 
         logger.debug("GP Hyperparameters: " + str(self.hypers))
-        logger.debug("GP noise: " + str(self.noise))
+
+        r = abs(
+            calc_reliability(self.dataset_name, self.neighbor_name, self.X,
+                             self.y, self.X.shape[0]))
+        logger.debug("GP noise (before): " + str(self.noise))
+        self.noise = r * 1e-3
+        logger.debug("GP noise (with reliability): " + str(self.noise))
 
         try:
             self.gp.compute(self.X, yerr=np.sqrt(self.noise))
@@ -206,7 +224,8 @@ class GaussianProcess(BaseModel):
         p0 = np.append(p0, np.log(self.noise))
 
         if self.use_gradients:
-            theta, _, _ = optimize.minimize(self.nll, p0,
+            theta, _, _ = optimize.minimize(self.nll,
+                                            p0,
                                             method="BFGS",
                                             jac=self.grad_nll)
         else:
@@ -214,7 +233,9 @@ class GaussianProcess(BaseModel):
                 results = optimize.minimize(self.nll, p0, method='L-BFGS-B')
                 theta = results.x
             except ValueError:
-                logging.error("Could not find a valid hyperparameter configuration! Use initial configuration")
+                logging.error(
+                    "Could not find a valid hyperparameter configuration! Use initial configuration"
+                )
                 theta = p0
 
         return theta
@@ -274,15 +295,17 @@ class GaussianProcess(BaseModel):
             raise Exception('Model has to be trained first!')
 
         if self.normalize_input:
-            X_test_norm, _, _ = normalization.zero_one_normalization(X_test, self.lower, self.upper)
+            X_test_norm, _, _ = normalization.zero_one_normalization(
+                X_test, self.lower, self.upper)
         else:
             X_test_norm = X_test
 
         mu, var = self.gp.predict(self.y, X_test_norm)
 
         if self.normalize_output:
-            mu = normalization.zero_mean_unit_var_unnormalization(mu, self.y_mean, self.y_std)
-            var *= self.y_std ** 2
+            mu = normalization.zero_mean_unit_var_unnormalization(
+                mu, self.y_mean, self.y_std)
+            var *= self.y_std**2
         if not full_cov:
             var = np.diag(var)
 
@@ -292,7 +315,8 @@ class GaussianProcess(BaseModel):
             var = np.clip(var, np.finfo(var.dtype).eps, np.inf)
         else:
             var = np.clip(var, np.finfo(var.dtype).eps, np.inf)
-            var[np.where((var < np.finfo(var.dtype).eps) & (var > -np.finfo(var.dtype).eps))] = 0
+            var[np.where((var < np.finfo(var.dtype).eps)
+                         & (var > -np.finfo(var.dtype).eps))] = 0
 
         return mu, var
 
@@ -315,7 +339,8 @@ class GaussianProcess(BaseModel):
         """
 
         if self.normalize_input:
-            X_test_norm, _, _ = normalization.zero_one_normalization(X_test, self.lower, self.upper)
+            X_test_norm, _, _ = normalization.zero_one_normalization(
+                X_test, self.lower, self.upper)
         else:
             X_test_norm = X_test
 
@@ -325,7 +350,8 @@ class GaussianProcess(BaseModel):
         funcs = self.gp.sample_conditional(self.y, X_test_norm, n_funcs)
 
         if self.normalize_output:
-            funcs = normalization.zero_mean_unit_var_unnormalization(funcs, self.y_mean, self.y_std)
+            funcs = normalization.zero_mean_unit_var_unnormalization(
+                funcs, self.y_mean, self.y_std)
 
         if len(funcs.shape) == 1:
             return funcs[None, :]
@@ -345,9 +371,11 @@ class GaussianProcess(BaseModel):
         """
         inc, inc_value = super(GaussianProcess, self).get_incumbent()
         if self.normalize_input:
-            inc = normalization.zero_one_unnormalization(inc, self.lower, self.upper)
+            inc = normalization.zero_one_unnormalization(
+                inc, self.lower, self.upper)
 
         if self.normalize_output:
-            inc_value = normalization.zero_mean_unit_var_unnormalization(inc_value, self.y_mean, self.y_std)
+            inc_value = normalization.zero_mean_unit_var_unnormalization(
+                inc_value, self.y_mean, self.y_std)
 
         return inc, inc_value
