@@ -19,6 +19,81 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{NIPS2011_4443}{incollection}{useauthor=false,useeditor=false}
+      \name{author}{4}{}{%
+        {{hash=3ae355f48ab5e9ac46c7be14eed08e6f}{%
+           family={Bergstra},
+           familyi={B\bibinitperiod},
+           given={James\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=54e0102029117aca9809348036388cf9}{%
+           family={Bardenet},
+           familyi={B\bibinitperiod},
+           given={Rémi},
+           giveni={R\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=8c0b75b51fab44f860838ecaa76c3ce1}{%
+           family={Kégl},
+           familyi={K\bibinitperiod},
+           given={Balázs},
+           giveni={B\bibinitperiod}}}%
+      }
+      \name{editor}{5}{}{%
+        {{hash=17d84f13777dc856d4bd59366a03c33c}{%
+           family={Shawe-Taylor},
+           familyi={S\bibinithyphendelim T\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d64a2b7de381af23255ca681b0d73a8b}{%
+           family={Zemel},
+           familyi={Z\bibinitperiod},
+           given={R.\bibnamedelimi S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=22667cb0b293498c57d37241930dc93d}{%
+           family={Bartlett},
+           familyi={B\bibinitperiod},
+           given={P.\bibnamedelimi L.},
+           giveni={P\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=128472f7930be2fd0645b02dc02aaeb8}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=ad5ed31dbb8d37755c6cb48bedfdfe1d}{%
+           family={Weinberger},
+           familyi={W\bibinitperiod},
+           given={K.\bibnamedelimi Q.},
+           giveni={K\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{authorbibnamehash}{be1c4a143eb634b0cb2a3431eb59abc8}
+      \strng{authornamehash}{be1c4a143eb634b0cb2a3431eb59abc8}
+      \strng{authorfullhash}{c065a900dc5e171a4b761ab88f8d5c3e}
+      \strng{editorbibnamehash}{ab291765089b66c28f50da0ccb8bb61b}
+      \strng{editornamehash}{ab291765089b66c28f50da0ccb8bb61b}
+      \strng{editorfullhash}{d40228588a6a3c790e75383fd6b81d62}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems 24}
+      \field{langid}{english}
+      \field{title}{Algorithms for Hyper-Parameter Optimization}
+      \field{year}{2011}
+      \field{pages}{2546\bibrangedash 2554}
+      \range{pages}{9}
+      \verb{urlraw}
+      \verb http://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf
+      \endverb
+      \verb{url}
+      \verb http://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf
+      \endverb
+    \endentry
     \entry{NIPS2015_5872}{incollection}{useauthor=false,useeditor=false}
       \name{author}{6}{}{%
         {{hash=2661e0a744cd67c731851c7f1c80d2e2}{%
@@ -92,6 +167,7 @@
       \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
       \field{labeltitlesource}{title}
       \field{booktitle}{Advances in Neural Information Processing Systems 28}
+      \field{langid}{english}
       \field{title}{Efficient and Robust Automated Machine Learning}
       \field{year}{2015}
       \field{pages}{2962\bibrangedash 2970}
@@ -132,6 +208,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 35th International Conference on Machine Learning (ICML 2018)}
+      \field{langid}{english}
       \field{month}{7}
       \field{title}{{BOHB}: Robust and Efficient Hyperparameter Optimization at Scale}
       \field{year}{2018}
@@ -186,6 +263,7 @@
       \field{labeltitlesource}{title}
       \field{booktitle}{AutoML: Methods, Sytems, Challenges}
       \field{chapter}{1}
+      \field{langid}{english}
       \field{month}{5}
       \field{title}{Hyperparameter Optimization}
       \field{year}{2019}
@@ -223,6 +301,7 @@
       \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{langid}{english}
       \field{note}{Available online: {http://www.cs.ubc.ca/\~{}hutter/papers/10-TR-SMAC.pdf}}
       \field{title}{Sequential Model-Based Optimization for General Algorithm Configuration (extended version)}
       \field{type}{techreport}
@@ -255,17 +334,52 @@
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.AI}
       \field{eprinttype}{arXiv}
+      \field{langid}{english}
       \field{title}{Warmstarting of Model-based Algorithm Configuration}
       \field{year}{2017}
       \verb{eprint}
       \verb 1709.04636
       \endverb
     \endentry
+    \entry{klein-bayesopt17}{inproceedings}{useauthor=false}
+      \name{author}{4}{}{%
+        {{hash=29d45a9eb0ebe08234f6b49e7858f2ef}{%
+           family={Klein},
+           familyi={K\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=72c44f17af9d4e71de5640b201b4451a}{%
+           family={Falkner},
+           familyi={F\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=793efc755a464d04e9be14e73295fa90}{%
+           family={Mansur},
+           familyi={M\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=4db2b09973c88dfc6c987ed53d89c9e5}{%
+           family={Hutter},
+           familyi={H\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{authorbibnamehash}{317b1fef1555167140be9a393ff552dc}
+      \strng{authornamehash}{317b1fef1555167140be9a393ff552dc}
+      \strng{authorfullhash}{14f86c90d7203c5c4730af35aca81f52}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{NIPS 2017 Bayesian Optimization Workshop}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{title}{RoBO: A Flexible and Robust Bayesian Optimization Framework in Python}
+      \field{year}{2017}
+    \endentry
   \enddatalist
+  \missing{automlbook19a}
   \missing{feurer2015efficient}
   \missing{feurer2018practical}
-  \missing{hutter2011sequential}
-  \missing{leite2010active}
   \missing{thornton2013auto}
 \endrefsection
 \endinput

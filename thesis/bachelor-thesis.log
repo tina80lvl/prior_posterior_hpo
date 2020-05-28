@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.5.3)  27 MAY 2020 19:17
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.5.3)  28 MAY 2020 05:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1364,41 +1364,38 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@loff=\dimen311
 \@vwid@roff=\dimen312
 ))
-
-LaTeX Warning: File `bachelor-thesis.bib' already exists on the system.
-               Not generating it from this source.
-
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'russian'.
+
 (./bachelor-thesis.aux)
 \openout1 = `bachelor-thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 8
-8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
+1.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1516,6 +1513,13 @@ Package biblatex Info: ... file 'bachelor-thesis.bbl' found.
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
+(biblatex)                automlbook19a
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
 (biblatex)                feurer2015efficient
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
@@ -1530,27 +1534,13 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                hutter2011sequential
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                leite2010active
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
 (biblatex)                thornton2013auto
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
 )
-Package biblatex Info: Reference section=0 on input line 88.
-Package biblatex Info: Reference segment=0 on input line 88.
+Package biblatex Info: Reference section=0 on input line 31.
+Package biblatex Info: Reference segment=0 on input line 31.
 \c@lstlisting=\count515
 \appendixPrefix=\skip117
 
@@ -1559,77 +1549,77 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 88.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 88.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 88.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 88.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 88.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 88.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 88.
-LaTeX Font Info:    Redeclaring math accent \check on input line 88.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 88.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 88.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 88.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 88.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 88.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 88.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 88.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 88.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 88.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 88.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 88.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 88.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 88.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 88.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 88.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 88.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 31.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 31.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 31.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 31.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 31.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 31.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 31.
+LaTeX Font Info:    Redeclaring math accent \check on input line 31.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 31.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 31.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 31.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 31.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 88.
+(Font)              `operators' in the math version `normal' on input line 31.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 8
-8.
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 3
+1.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 88.
+(Font)              `operators' in the math version `bold' on input line 31.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 
-88.
+31.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on 
-input line 88.
+input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
- 88.
+ 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 
-88.
+31.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/Arial(0)/m/n on input line 88.
+(Font)                  OT1/cmss/m/n --> TU/Arial(0)/m/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/m/n on input line 88.
+(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/m/n on input line 31.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on 
-input line 88.
+input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input lin
-e 88.
+e 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/Arial(0)/b/n on input line 88.
+(Font)                  OT1/cmss/bx/n --> TU/Arial(0)/b/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/b/n on input line 88.
+(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/b/n on input line 31.
 
  ABD: EveryShipout initializing macros
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd) [1
 
 ] [1]
-Underfull \hbox (badness 3780) in paragraph at lines 151--151
+Underfull \hbox (badness 3780) in paragraph at lines 94--94
 \TU/TimesNewRoman(0)/b/n/12 Направленность (профиль) образовательной программы 
 \TU/TimesNewRoman(0)/m/n/12 Математические модели и
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 151--151
+Underfull \hbox (badness 1596) in paragraph at lines 94--94
 []\TU/TimesNewRoman(0)/m/n/12 Efficient and robust automated machine learning /
  M. Feurer // Advances in neural
  []
@@ -1651,110 +1641,89 @@ This may cause the page layout to be inconsistent, however.
 
 ] [6]
 Глава 1.
-Package biblatex Info: Reference segment=1 on input line 182.
-Package biblatex Info: Setting label 'refsegment:01' on input line 182.
+Package biblatex Info: Reference segment=1 on input line 125.
+Package biblatex Info: Setting label 'refsegment:01' on input line 125.
 [7
 
 ] [8] [9] [10] [11]
+Underfull \hbox (badness 1168) in paragraph at lines 270--271
+\TU/TimesNewRoman(0)/m/it/14.4 годы (acquisition function)\TU/TimesNewRoman(0)/
+m/n/14.4 , после чего в максимуме функции выгоды бу-
+ []
 
-LaTeX Warning: Citation 'NIPS2011_4443' on page 12 undefined on input line 300.
-
-
-[12]
+[12] [13] [14]
 Глава 2.
-[13
+[15
 
 ]
+File: parceptrone.png Graphic file (type bmp)
+<parceptrone.png>
+ [16] [17] [18]
 Глава 3.
-[14
+[19
 
-] [15
+] [20
 
 ]
-Underfull \hbox (badness 2005) in paragraph at lines 350--350
-[]\TU/TimesNewRoman(0)/m/n/14.4 Efficient and Robust Automated Machine Learning
- / M. Feurer [и др.]
- []
-
-
-Underfull \hbox (badness 1354) in paragraph at lines 350--350
-[]\TU/TimesNewRoman(0)/m/it/14.4 Feurer M.\TU/TimesNewRoman(0)/m/n/14.4 , \TU/T
-imesNewRoman(0)/m/it/14.4 Hutter F. \TU/TimesNewRoman(0)/m/n/14.4 Hyperparamete
-r Optimization [] AutoML: Methods,
- []
-
-
-Underfull \hbox (badness 3815) in paragraph at lines 350--350
-\TU/TimesNewRoman(0)/m/n/14.4 2010–10. — Available online: http://www.cs.ubc.ca
-/~hutter/papers/10-TR-
- []
-
 \c@@yearminusfive@src=\count516
 \c@@yearminusten@src=\count517
 
-LaTeX Warning: Empty bibliography on input line 350.
+
+LaTeX Warning: Empty bibliography on input line 357.
 
 
-LaTeX Warning: Empty bibliography on input line 350.
+LaTeX Warning: Empty bibliography on input line 357.
 
 
-LaTeX Warning: Empty bibliography on input line 350.
+LaTeX Warning: Empty bibliography on input line 357.
 
 
-LaTeX Warning: Empty bibliography on input line 350.
+LaTeX Warning: Empty bibliography on input line 357.
 
 
-Package biblatex Warning: Type 'online' not found on input line 350.
+Package biblatex Warning: Type 'online' not found on input line 357.
 
 
-LaTeX Warning: Empty bibliography on input line 350.
+LaTeX Warning: Empty bibliography on input line 357.
 
-[16
+[21
 
 ]
 Приложение А.
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--368
+Underfull \hbox (badness 10000) in paragraph at lines 375--375
 []|\TU/TimesNewRoman(0)/m/n/14.4 jungle-chess-2pcs-raw-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--372
+Underfull \hbox (badness 10000) in paragraph at lines 379--379
 []|\TU/TimesNewRoman(0)/m/n/14.4 gas-drift-different-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--376
+Underfull \hbox (badness 10000) in paragraph at lines 383--383
 []|\TU/TimesNewRoman(0)/m/n/14.4 jungle-chess-2pcs-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--376
+Underfull \hbox (badness 10000) in paragraph at lines 383--383
 \TU/TimesNewRoman(0)/m/n/14.4 endgame-panther-
  []
 
 
-Underfull \vbox (badness 10000) detected at line 399
+Underfull \vbox (badness 10000) detected at line 406
  []
 
-[17
+[22
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 512--512
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
 []|\TU/TimesNewRoman(0)/m/n/14.4 LED-display-domain-
  []
 
-[18] [19] (./bachelor-thesis.aux)
+[23] [24] (./bachelor-thesis.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                bachelor-thesis
-(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'bachelor-thesis.run.xml'.
 \openout1 = `bachelor-thesis.run.xml'.
@@ -1765,12 +1734,12 @@ Package logreq Info: Writing requests to 'bachelor-thesis.run.xml'.
 ### semi simple group (level 1) entered at line 64 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 32298 strings out of 479418
- 658995 string characters out of 5884586
- 1636519 words of memory out of 5000000
- 49172 multiletter control sequences out of 15000+600000
- 540862 words of font info for 101 fonts, out of 8000000 for 9000
+ 32371 strings out of 479418
+ 660368 string characters out of 5884586
+ 1636603 words of memory out of 5000000
+ 49237 multiletter control sequences out of 15000+600000
+ 541523 words of font info for 106 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 60i,12n,99p,1140b,25968s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,12n,99p,1140b,28075s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bachelor-thesis.pdf (22 pages).
+Output written on bachelor-thesis.pdf (27 pages).
