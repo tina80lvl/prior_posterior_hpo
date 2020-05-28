@@ -42,6 +42,7 @@ def train_dataset(dataset_name, initial_design, mode, runs=1):
     training_upper = np.max(X_train, axis=0)
 
     for i in range(runs):
+        print('run', i + 1, 'of', runs)
         # TODO make universal for any model
         objective_function = ML(X_train=X_train,
                                 y_train=y_train,
@@ -69,8 +70,9 @@ def train_dataset(dataset_name, initial_design, mode, runs=1):
         if not os.path.exists(result_path):
             os.makedirs(result_path)
 
-        d_name = 'popularkids'
+        d_name = dataset_name
         neighbor = get_nearest_names(1, d_name)[0]
+
         results = bayesian_optimization(objective_function,
                                         d_name,
                                         neighbor,
@@ -86,6 +88,7 @@ def train_dataset(dataset_name, initial_design, mode, runs=1):
                                         n_init=3,
                                         rng=None,
                                         output_path=result_path)
+
         json.dump(results, open(os.path.join(result_path, 'RESULTS.json'),
                                 'w'))
 
@@ -102,6 +105,7 @@ def train_datasets(initial_design, mode, optimization_runs_per_dataset=1):
 
 # with posterior
 # train_dataset('name', InitPosterior())
-neighbors = get_nearest_names(10, 'popularkids')
+name = 'cmc'
+neighbors = get_nearest_names(10, name)
 init_neigbors = InitPosterior(neighbors)
-train_dataset('PopularKids', init_neigbors, 'posterior-init/try3-2')
+train_dataset(name, init_neigbors, 'posterior-init/' + name, 10)

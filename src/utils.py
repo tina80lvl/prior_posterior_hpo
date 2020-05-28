@@ -38,13 +38,13 @@ def get_opt(data):
 
 
 def read_full_result(dir_name):
-    with open(dir_name + '/run-0/RESULTS.json', 'r') as read_file:
+    with open(dir_name + '/RESULTS.json', 'r') as read_file:
         data = json.load(read_file)
         return get_results_fields(data)
 
 
 def read_opt_result(dir_name):
-    with open(dir_name + '/run-0/RESULTS.json', 'r') as read_file:
+    with open(dir_name + '/RESULTS.json', 'r') as read_file:
         data = json.load(read_file)
         return get_opt(data)
 

@@ -24,6 +24,7 @@ class InitPosterior(object):
         samples = []
         for i in range(n_points):
             neighbor_name = self.nearest_names[i]
-            X_nearest, y_nearest = read_opt_result(dir + neighbor_name)
+            X_nearest, y_nearest = read_opt_result(dir + neighbor_name +
+                                                   '/run-0')
             samples.append(X_nearest)
         return np.array(samples)

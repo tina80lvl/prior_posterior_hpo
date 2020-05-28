@@ -21,9 +21,9 @@ def plot_predicted(mean, variance, real, dataset_name):
     plt.clf()
 
 
-def present_incubment(dir_name, dataset_name, info_file):
+def present_incubment(dir_name, dataset_name, run, info_file):
     (x_opt, f_opt, incubments, incumbent_values, runtime, overhead, X,
-     y) = read_full_result(dir_name + dataset_name + '/run-0/')
+     y) = read_full_result(dir_name + dataset_name + '/run-' + str(run))
 
     plt.plot(incumbent_values,
              linestyle='solid',
@@ -38,7 +38,7 @@ def present_incubment(dir_name, dataset_name, info_file):
 
     plt.plot(xmin,
              ymin,
-             'rx',
+             'cx',
              markersize=10,
              markeredgewidth=2,
              label='best: ' + str(ymin))
@@ -48,10 +48,10 @@ def present_incubment(dir_name, dataset_name, info_file):
     plt.title(dataset_name)
     plt.savefig('../png/incubment-iteration/' + dataset_name + '.png')
     # plt.show()
-    plt.clf()
+    # plt.clf()
 
 
-def present_all_incubments():
+def present_all_incubments(run):
     # datasets = get_datasets_list('../datasets/')
 
     info = open('../incubment-results.csv', 'w')
@@ -80,8 +80,77 @@ def present_all_incubments():
     ]
     for dataset in datasets:
         present_incubment('../optimization_results/f-score/random-log_ei-gp/',
-                          dataset, info)
+                          dataset, run, info)
+        plt.clf()
 
 
-present_all_incubments()
+def present_incubment_posterior(dir_name, dataset_name, run1, run2, info_file):
+    (x_opt1, f_opt1, incubments1, incumbent_values1, runtime1, overhead1, X1,
+     y1) = read_full_result(dir_name + 'f-score/random-log_ei-gp/' +
+                            dataset_name + '/run-' + str(run1))
+
+    (x_opt2, f_opt2, incubments2, incumbent_values2, runtime2, overhead2, X2,
+     y2) = read_full_result(dir_name + 'posterior-init/' + dataset_name +
+                            '/f-score/random-log_ei-gp/' + dataset_name +
+                            '/run-' + str(run2))
+
+    plt.plot(incumbent_values1,
+             linestyle='solid',
+             color='blue',
+             label='incubment without posterior')
+    plt.plot(incumbent_values2,
+             linestyle='solid',
+             color='magenta',
+             label='incubment with posterior')
+
+    ymin1 = min(incumbent_values1)
+    xpos1 = incumbent_values1.index(ymin1)
+    xmin1 = xpos1
+
+    ymin2 = min(incumbent_values2)
+    xpos2 = incumbent_values2.index(ymin2)
+    xmin2 = xpos2
+
+    info_file.write(dataset_name + ',' + str(ymin1) + ',' + str(ymin2) + ',' +
+                    str(xmin1) + ',' + str(xmin2) + '\n')
+
+    plt.plot(xmin1,
+             ymin1,
+             'cx',
+             markersize=10,
+             markeredgewidth=2,
+             label='best: ' + str(ymin1))
+    plt.plot(xmin2,
+             ymin2,
+             'rx',
+             markersize=10,
+             markeredgewidth=2,
+             label='best: ' + str(ymin2))
+    plt.xlabel('Iteration')
+    plt.ylabel('1 - F-score')
+    plt.legend()
+    plt.title(dataset_name)
+    plt.savefig('../png/incubment-iteration-posterior/' + dataset_name +
+                '.png')
+    plt.show()
+
+
+def present_incubments_with_posterior(run1=0, run2=0):
+    info = open('../incubment-results-posterior.csv', 'w')
+    info.write(
+        '"name","best_incubment","best_incubment_posterior","achieved_iteration","achieved_iteration_posterior"\n'
+    )
+
+    datasets = [
+        'car', 'wine', 'cmc', 'zoo', 'nursery', 'abalone', 'cardiotocography'
+    ]
+    for dataset in datasets:
+        present_incubment_posterior('../optimization_results/', dataset, run1,
+                                    run2, info)
+        plt.clf()
+
+
+# present_all_incubments(0)
+# present_incubments_with_posterior(0, 0)
+present_incubments_with_posterior()
 # present_incubment('../optimization_results/f-score/random-log_ei-gp/', 'PopularKids')

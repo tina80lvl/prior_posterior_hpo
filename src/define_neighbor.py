@@ -24,7 +24,7 @@ def get_nearest_names(n, problem_name):
 def calc_local_dz(X_problem, y_problem, neighbor_name):
     dz = []
     dir = '../optimization_results/f-score/random-log_ei-gp/'
-    X_neigbor, y_neighbor = read_opt_result(dir + neighbor_name)
+    X_neigbor, y_neighbor = read_opt_result(dir + neighbor_name + '/run-0')
     X_neigbor = np.array(X_neigbor)
     dz.append(abs(y_problem[0] - y_neighbor))
 
