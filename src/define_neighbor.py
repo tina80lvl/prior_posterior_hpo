@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 def get_nearest_names(n, problem_name):
     df = pd.read_csv(os.path.join('../', 'datasets-distances.csv'))
-    nearests = df.loc[df['dataset1'] == problem_name].sort_values(
+    nearests = df.loc[df['dataset1'] == problem_name.lower()].sort_values(
         by=['distance'])['dataset2'].tolist()
     return nearests[1:(n + 1)]
 

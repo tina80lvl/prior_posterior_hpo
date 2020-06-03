@@ -93,19 +93,19 @@ def train_dataset(dataset_name, initial_design, mode, runs=1):
                                 'w'))
 
 
-def train_datasets(initial_design, mode, optimization_runs_per_dataset=1):
+def train_datasets(use_initial_design, mode, optimization_runs_per_dataset=1):
     datasets = get_datasets_list('../datasets/')
+    initial_design = init_latin_hypercube_sampling
     for dataset_name in datasets:
+        if use_initial_design:
+            neighbors = get_nearest_names(10, dataset_name)
+            initial_design = InitPosterior(neighbors)
         train_dataset(dataset_name, initial_design, mode,
                       optimization_runs_per_dataset)
 
 
 # without posterior
-# train_datasets(init_latin_hypercube_sampling)
+# train_datasets('posterior-init/')
 
 # with posterior
-# train_dataset('name', InitPosterior())
-name = 'desharnais'
-neighbors = get_nearest_names(10, name)
-init_neigbors = InitPosterior(neighbors)
-train_dataset(name, init_neigbors, 'posterior-init/' + name, 10)
+train_datasets(True, 'posterior-init/', 10)
