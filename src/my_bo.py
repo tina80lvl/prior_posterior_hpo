@@ -2,17 +2,20 @@ import logging
 import george
 import numpy as np
 
+from GP import GaussianProcess
+from BO import BayesianOptimization
+
 from pybnn.dngo import DNGO
 
 from robo.priors.default_priors import DefaultPrior
 from robo.models.wrapper_bohamiann import WrapperBohamiann
-from robo.models.gaussian_process import GaussianProcess
+# from robo.models.gaussian_process import GaussianProcess
 from robo.models.gaussian_process_mcmc import GaussianProcessMCMC
 # from robo.models.random_forest import RandomForest
 from robo.maximizers.scipy_optimizer import SciPyOptimizer
 from robo.maximizers.random_sampling import RandomSampling
 from robo.maximizers.differential_evolution import DifferentialEvolution
-from robo.solver.bayesian_optimization import BayesianOptimization
+# from robo.solver.bayesian_optimization import BayesianOptimization
 from robo.acquisition_functions.ei import EI
 from robo.acquisition_functions.pi import PI
 from robo.acquisition_functions.log_ei import LogEI
@@ -24,9 +27,12 @@ logger = logging.getLogger(__name__)
 
 
 def bayesian_optimization(objective_function,
+                          dataset_name,
+                          neighbor_name,
                           lower,
                           upper,
                           num_iterations=30,
+                          initial_design=init_latin_hypercube_sampling,
                           X_init=None,
                           Y_init=None,
                           maximizer="random",
@@ -95,6 +101,8 @@ def bayesian_optimization(objective_function,
 
     if model_type == "gp":
         model = GaussianProcess(kernel,
+                                dataset_name,
+                                neighbor_name,
                                 prior=prior,
                                 rng=rng,
                                 normalize_output=False,
@@ -163,7 +171,7 @@ def bayesian_optimization(objective_function,
                               max_func,
                               initial_points=n_init,
                               rng=rng,
-                              initial_design=init_latin_hypercube_sampling,
+                              initial_design=initial_design,
                               output_path=output_path)
 
     x_best, f_min = bo.run(num_iterations, X=X_init, y=Y_init)

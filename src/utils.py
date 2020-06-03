@@ -29,11 +29,24 @@ def get_results_fields(data):
     X = data['X']
     y = data['y']
 
-    mean = data['mean']
-    variance = data['variance']
-    real = data['real']
-    return (incumbents, x_opt, f_opt, incumbent_values, runtime, overhead, X,
-            y, mean, variance, real)
+    return x_opt, f_opt, incumbents, incumbent_values, runtime, overhead, X, y
+
+
+def get_opt(data):
+    x_opt, f_opt, _, _, _, _, _, _ = get_results_fields(data)
+    return x_opt, f_opt
+
+
+def read_full_result(dir_name):
+    with open(dir_name + '/RESULTS.json', 'r') as read_file:
+        data = json.load(read_file)
+        return get_results_fields(data)
+
+
+def read_opt_result(dir_name):
+    with open(dir_name + '/RESULTS.json', 'r') as read_file:
+        data = json.load(read_file)
+        return get_opt(data)
 
 
 def save_model(name, model):
@@ -41,12 +54,6 @@ def save_model(name, model):
     f = open('saved_models/' + name + '_model.txt', 'w')
     f.write(model)
     f.close()
-
-
-def read_result(dir_name):
-    with open(dir_name + '/RESULTS.json', 'r') as read_file:
-        data = json.load(read_file)
-        return get_results_fields(data)
 
 
 def get_datasets_list(path):
