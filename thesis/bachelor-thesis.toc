@@ -103,19 +103,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Метрика для определения подобия задач}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Расширение Байесовской оптимизации}{18}%
+\contentsline {section}{\numberline {2.3}Расширение Байесовской оптимизации}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Данные}{18}%
+\contentsline {subsection}{\numberline {2.3.1}Апостериорная информация}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Выводы по главе\nobreakspace 2}{18}%
+\contentsline {subsection}{\numberline {2.3.2}Расстановка начальных конфигураций}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Анализ полученных результатов}{19}%
+\contentsline {section}{Выводы по главе\nobreakspace 2}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Выводы по главе\nobreakspace 3}{19}%
+\contentsline {chapter}{\numberline {3}Анализ полученных результатов}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{ЗАКЛЮЧЕНИЕ}{20}%
+\contentsline {section}{Выводы по главе\nobreakspace 3}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{21}%
+\contentsline {chapter}{ЗАКЛЮЧЕНИЕ}{27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{28}%
 \babel@toc {english}{}
 \babel@toc {russian}{}
 \babel@toc {english}{}
@@ -163,5 +165,7 @@
 \defcounter {refsection}{0}\relax 
 \ttl@change@v {chapter}{}{}{}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {А}Результаты классической Байесовской оптимизации}{22}%
+\contentsline {chapter}{\numberline {А}Результаты классической Байесовской оптимизации}{29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {Б}Результаты классической Байесовской оптимизации}{32}%
 \contentsfinish 

@@ -105,7 +105,7 @@ def train_datasets(initial_design, mode, optimization_runs_per_dataset=1):
 
 # with posterior
 # train_dataset('name', InitPosterior())
-name = 'cmc'
+name = 'desharnais'
 neighbors = get_nearest_names(10, name)
 init_neigbors = InitPosterior(neighbors)
 train_dataset(name, init_neigbors, 'posterior-init/' + name, 10)

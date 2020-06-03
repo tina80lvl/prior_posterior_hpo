@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.5.3)  28 MAY 2020 05:16
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.5.3)  28 MAY 2020 23:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1369,7 +1369,26 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'russian'.
 
-(./bachelor-thesis.aux)
+(./bachelor-thesis.aux
+
+LaTeX Warning: Label `img:bo' multiply defined.
+
+
+LaTeX Warning: Label `img:bo' multiply defined.
+
+
+LaTeX Warning: Label `img:bo' multiply defined.
+
+
+LaTeX Warning: Label `img:bo' multiply defined.
+
+
+LaTeX Warning: Label `img:bo' multiply defined.
+
+
+LaTeX Warning: Label `sec:app:1' multiply defined.
+
+)
 \openout1 = `bachelor-thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
@@ -1383,8 +1402,7 @@ LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
 1.
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 31.
@@ -1658,72 +1676,150 @@ m/n/14.4 , после чего в максимуме функции выгоды
 ]
 File: parceptrone.png Graphic file (type bmp)
 <parceptrone.png>
- [16] [17] [18]
+ [16] [17] [18] [19]
+File: bo_gp.png Graphic file (type bmp)
+<bo_gp.png>
+ [20] [21] [22]
 Глава 3.
-[19
+File: car.png Graphic file (type bmp)
+<car.png>
+File: glass.png Graphic file (type bmp)
+<glass.png>
+File: wine.png Graphic file (type bmp)
+<wine.png>
 
-] [20
+Underfull \hbox (badness 1147) in paragraph at lines 397--413
+[]\TU/TimesNewRoman(0)/m/n/14.4 Полный список результатов классической Байесовс
+кой оптимизации
+ []
+
+
+LaTeX Warning: Reference `sec:app:2' on page 23 undefined on input line 414.
+
+File: p-car.png Graphic file (type bmp)
+<p-car.png>
+File: p-glass.png Graphic file (type bmp)
+<p-glass.png>
+File: p-wine.png Graphic file (type bmp)
+<p-wine.png>
+[23
+
+] [24] [25] [26] [27
 
 ]
 \c@@yearminusfive@src=\count516
 \c@@yearminusten@src=\count517
 
 
-LaTeX Warning: Empty bibliography on input line 357.
+LaTeX Warning: Empty bibliography on input line 439.
 
 
-LaTeX Warning: Empty bibliography on input line 357.
+LaTeX Warning: Empty bibliography on input line 439.
 
 
-LaTeX Warning: Empty bibliography on input line 357.
+LaTeX Warning: Empty bibliography on input line 439.
 
 
-LaTeX Warning: Empty bibliography on input line 357.
+LaTeX Warning: Empty bibliography on input line 439.
 
 
-Package biblatex Warning: Type 'online' not found on input line 357.
+Package biblatex Warning: Type 'online' not found on input line 439.
 
 
-LaTeX Warning: Empty bibliography on input line 357.
+LaTeX Warning: Empty bibliography on input line 439.
 
-[21
+[28
 
 ]
 Приложение А.
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--375
+Underfull \hbox (badness 10000) in paragraph at lines 457--457
 []|\TU/TimesNewRoman(0)/m/n/14.4 jungle-chess-2pcs-raw-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 379--379
+Underfull \hbox (badness 10000) in paragraph at lines 461--461
 []|\TU/TimesNewRoman(0)/m/n/14.4 gas-drift-different-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--383
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
 []|\TU/TimesNewRoman(0)/m/n/14.4 jungle-chess-2pcs-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--383
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
 \TU/TimesNewRoman(0)/m/n/14.4 endgame-panther-
  []
 
 
-Underfull \vbox (badness 10000) detected at line 406
+Underfull \vbox (badness 10000) detected at line 488
  []
 
-[22
+[29
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 519--519
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
 []|\TU/TimesNewRoman(0)/m/n/14.4 LED-display-domain-
  []
 
-[23] [24] (./bachelor-thesis.aux)
+[30] [31]
+Приложение Б.
+
+Underfull \hbox (badness 10000) in paragraph at lines 611--611
+[]|\TU/TimesNewRoman(0)/b/n/14.4 Номер
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 611--611
+\TU/TimesNewRoman(0)/b/n/14.4 ите-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 611--611
+\TU/TimesNewRoman(0)/b/n/14.4 рации
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 611--612
+[]|\TU/TimesNewRoman(0)/b/n/14.4 Номер
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 611--612
+\TU/TimesNewRoman(0)/b/n/14.4 ите-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 611--612
+\TU/TimesNewRoman(0)/b/n/14.4 рации
+ []
+
+
+Overfull \hbox (4.01859pt too wide) in paragraph at lines 625--625
+[]|\TU/TimesNewRoman(0)/m/n/14.4 cardiotocography| 
+ []
+
+
+Overfull \hbox (33.9467pt too wide) in alignment at lines 609--634
+ [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 634
+ []
+
+[32
+
+] (./bachelor-thesis.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'bachelor-thesis.run.xml'.
 \openout1 = `bachelor-thesis.run.xml'.
@@ -1734,12 +1830,12 @@ Package logreq Info: Writing requests to 'bachelor-thesis.run.xml'.
 ### semi simple group (level 1) entered at line 64 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 32371 strings out of 479418
- 660368 string characters out of 5884586
- 1636603 words of memory out of 5000000
- 49237 multiletter control sequences out of 15000+600000
+ 32452 strings out of 479418
+ 661170 string characters out of 5884586
+ 1636808 words of memory out of 5000000
+ 49318 multiletter control sequences out of 15000+600000
  541523 words of font info for 106 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 60i,12n,99p,1140b,28075s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,12n,99p,1197b,28080s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bachelor-thesis.pdf (27 pages).
+Output written on bachelor-thesis.pdf (35 pages).

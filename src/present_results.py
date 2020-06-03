@@ -141,9 +141,7 @@ def present_incubments_with_posterior(run1=0, run2=0):
         '"name","best_incubment","best_incubment_posterior","achieved_iteration","achieved_iteration_posterior"\n'
     )
 
-    datasets = [
-        'car', 'wine', 'cmc', 'zoo', 'nursery', 'abalone', 'cardiotocography'
-    ]
+    datasets = ['car', 'wine', 'cmc', 'zoo', 'nursery', 'abalone', 'cardiotocography', 'desharnais', 'glass', 'segment']
     for dataset in datasets:
         present_incubment_posterior('../optimization_results/', dataset, run1,
                                     run2, info)
