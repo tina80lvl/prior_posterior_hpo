@@ -3,8 +3,8 @@
 check.py
 try.py
 plot_ex.py
+be_careful.txt
 datasets/
-png/
 training_logs/
 
 # Byte-compiled / optimized / DLL files
