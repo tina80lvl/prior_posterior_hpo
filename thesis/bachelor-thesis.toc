@@ -73,7 +73,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subparagraph}{Недостатки}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.1}Байесовская оптимизация}{12}%
+\contentsline {subsection}{\numberline {1.4.1}Сравнение существующих подходов к оптимизации}{12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.2}Байесовская оптимизация}{12}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Модель}{13}%
 \defcounter {refsection}{0}\relax 
@@ -109,15 +111,43 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.2}Расстановка начальных конфигураций}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Выводы по главе\nobreakspace 2}{22}%
+\contentsline {section}{Выводы по главе\nobreakspace 2}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Анализ полученных результатов}{23}%
+\contentsline {chapter}{\numberline {3}Анализ полученных результатов}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Выводы по главе\nobreakspace 3}{23}%
+\contentsline {section}{\numberline {3.1}Подробности реализации}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{ЗАКЛЮЧЕНИЕ}{27}%
+\contentsline {section}{\numberline {3.2}Статистические результаты, дисперсия}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{28}%
+\contentsline {section}{\numberline {3.3}Результаты классической Байесовской оптимизации}{25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Сравнение результатов классической и расширенной Байесовской оптимизации}{27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.1}Оценка качества оптимизации}{28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Значения целевых функций различны.}{29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Значения целевых функций одинаковы.}{29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.2}Оценка результатов}{29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Выводы по главе\nobreakspace 3}{30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{ЗАКЛЮЧЕНИЕ}{32}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{33}%
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
 \babel@toc {english}{}
 \babel@toc {russian}{}
 \babel@toc {english}{}
@@ -165,7 +195,9 @@
 \defcounter {refsection}{0}\relax 
 \ttl@change@v {chapter}{}{}{}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {А}Результаты классической Байесовской оптимизации}{29}%
+\contentsline {chapter}{\numberline {А}Информация об отобранных датасетах}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {Б}Результаты классической Байесовской оптимизации}{32}%
+\contentsline {chapter}{\numberline {Б}Результаты классической Байесовской оптимизации}{38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {В}Результаты расширенной Байесовской оптимизации}{41}%
 \contentsfinish 

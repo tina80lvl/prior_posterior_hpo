@@ -309,6 +309,33 @@
       \field{number}{TR-2010\bibrangedash 10}
       \range{number}{-1}
     \endentry
+    \entry{kiss2019bayesian}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f9c02694167a4df2e6917b8da70a1f8f}{%
+           family={Kiss},
+           familyi={K\bibinitperiod},
+           given={Oriel},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{f9c02694167a4df2e6917b8da70a1f8f}
+      \strng{fullhash}{f9c02694167a4df2e6917b8da70a1f8f}
+      \strng{bibnamehash}{f9c02694167a4df2e6917b8da70a1f8f}
+      \strng{authorbibnamehash}{f9c02694167a4df2e6917b8da70a1f8f}
+      \strng{authornamehash}{f9c02694167a4df2e6917b8da70a1f8f}
+      \strng{authorfullhash}{f9c02694167a4df2e6917b8da70a1f8f}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{physics.data-an}
+      \field{eprinttype}{arXiv}
+      \field{langid}{english}
+      \field{title}{Bayesian Optimization for machine learning algorithms in the context of Higgs searches at the CMS experiment}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1911.02501
+      \endverb
+    \endentry
     \entry{lindauer2017warmstarting}{misc}{}
       \name{author}{2}{}{%
         {{hash=fcea9ebaf01b5a334513699230ad72fc}{%
@@ -339,6 +366,63 @@
       \field{year}{2017}
       \verb{eprint}
       \verb 1709.04636
+      \endverb
+    \endentry
+    \entry{OpenML2013}{article}{useauthor=false}
+      \name{author}{4}{}{%
+        {{hash=4ce3afeba4f8f866dbad8e5b02118406}{%
+           family={Vanschoren},
+           familyi={V\bibinitperiod},
+           given={Joaquin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=09c51db2fbb24f4ec363924d7ae87263}{%
+           family={Rijn},
+           familyi={R\bibinitperiod},
+           given={Jan\bibnamedelima N.},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=c5695b464b6059e7047553d017275f65}{%
+           family={Bischl},
+           familyi={B\bibinitperiod},
+           given={Bernd},
+           giveni={B\bibinitperiod}}}%
+        {{hash=ade9e8b13149342c6e260928fd6b2d3a}{%
+           family={Torgo},
+           familyi={T\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{authorbibnamehash}{067adf3ec91858fe0cfe28e0d01738fb}
+      \strng{authornamehash}{067adf3ec91858fe0cfe28e0d01738fb}
+      \strng{authorfullhash}{db4436ad6be0fa006763d94d3cdf16dc}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SIGKDD Explorations}
+      \field{langid}{english}
+      \field{title}{OpenML: Networked Science in Machine Learning}
+      \field{year}{2013}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{49\bibrangedash 60}
+      \range{pages}{12}
+      \field{volume}{15}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1145/2641190.2641198
+      \endverb
+      \verb{urlraw}
+      \verb http://doi.acm.org/10.1145/2641190.2641198
+      \endverb
+      \verb{url}
+      \verb http://doi.acm.org/10.1145/2641190.2641198
       \endverb
     \endentry
     \entry{klein-bayesopt17}{inproceedings}{useauthor=false}
@@ -378,9 +462,6 @@
     \endentry
   \enddatalist
   \missing{automlbook19a}
-  \missing{feurer2015efficient}
-  \missing{feurer2018practical}
-  \missing{thornton2013auto}
 \endrefsection
 \endinput
 

@@ -3542,6 +3542,8 @@
     <bcf:citekey order="3">NIPS2011_4443</bcf:citekey>
     <bcf:citekey order="4">automlbook19a</bcf:citekey>
     <bcf:citekey order="5">klein-bayesopt17</bcf:citekey>
+    <bcf:citekey order="6">kiss2019bayesian</bcf:citekey>
+    <bcf:citekey order="7">OpenML2013</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
