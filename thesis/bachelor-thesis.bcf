@@ -3534,16 +3534,29 @@
     <bcf:datasource type="file" datatype="bibtex">bachelor-thesis.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">feurer-automlbook19a</bcf:citekey>
-    <bcf:citekey order="2">lindauer2017warmstarting</bcf:citekey>
-    <bcf:citekey order="2">HutHooLey10-TR</bcf:citekey>
-    <bcf:citekey order="2">NIPS2015_5872</bcf:citekey>
-    <bcf:citekey order="2">falkner-icml-18</bcf:citekey>
-    <bcf:citekey order="3">NIPS2011_4443</bcf:citekey>
-    <bcf:citekey order="4">automlbook19a</bcf:citekey>
-    <bcf:citekey order="5">klein-bayesopt17</bcf:citekey>
-    <bcf:citekey order="6">kiss2019bayesian</bcf:citekey>
-    <bcf:citekey order="7">OpenML2013</bcf:citekey>
+    <bcf:citekey order="1">claesen2015hyperparameter</bcf:citekey>
+    <bcf:citekey order="2">feurer-automlbook19a</bcf:citekey>
+    <bcf:citekey order="3">10.1145/3401071</bcf:citekey>
+    <bcf:citekey order="4">lindauer2017warmstarting</bcf:citekey>
+    <bcf:citekey order="4">HutHooLey10-TR</bcf:citekey>
+    <bcf:citekey order="4">NIPS2015_5872</bcf:citekey>
+    <bcf:citekey order="4">falkner-icml-18</bcf:citekey>
+    <bcf:citekey order="5">wan2020nbdt</bcf:citekey>
+    <bcf:citekey order="6">yu2019anyprecision</bcf:citekey>
+    <bcf:citekey order="7">powers2015fmeasure</bcf:citekey>
+    <bcf:citekey order="8">NIPS2011_4443</bcf:citekey>
+    <bcf:citekey order="9">yu2020hyperparameter</bcf:citekey>
+    <bcf:citekey order="10">automlbook19a</bcf:citekey>
+    <bcf:citekey order="11">koh2017understanding</bcf:citekey>
+    <bcf:citekey order="12">klein-bayesopt17</bcf:citekey>
+    <bcf:citekey order="13">article</bcf:citekey>
+    <bcf:citekey order="13">hastie_09_elements-of.statistical-learning</bcf:citekey>
+    <bcf:citekey order="14">hastie_09_elements-of.statistical-learning</bcf:citekey>
+    <bcf:citekey order="15">jomaa2019dataset2vec</bcf:citekey>
+    <bcf:citekey order="16">kiss2019bayesian</bcf:citekey>
+    <bcf:citekey order="17">OpenML2013</bcf:citekey>
+    <bcf:citekey order="18">Neuhäuser2011</bcf:citekey>
+    <bcf:citekey order="19">mann1947</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

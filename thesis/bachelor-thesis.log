@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.5.3)  10 JUN 2020 23:30
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.5.3)  19 JUN 2020 02:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1603,10 +1603,10 @@ Underfull \hbox (badness 1596) in paragraph at lines 94--94
  M. Feurer // Advances in neural
  []
 
-[1] [2] [1] [2] (./bachelor-thesis.toc)
-\tf@toc=\write6
-\openout6 = `bachelor-thesis.toc'.
-
+[1] [2] [1] [2] (./bachelor-thesis.toc
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
+ []|| []\TU/TimesNewRoman(0)/m/n/14.4 Дисперсии для классической Байесовской 
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1616,215 +1616,636 @@ This may cause the page layout to be inconsistent, however.
 
 [4
 
-] [5
+]
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+ []|| []\TU/TimesNewRoman(0)/m/n/14.4 Дисперсии для расширенной Байесовской 
+ []
 
-] [6]
+)
+\tf@toc=\write6
+\openout6 = `bachelor-thesis.toc'.
+
+ [5] [6
+
+] [7]
 Глава 1.
 Package biblatex Info: Reference segment=1 on input line 125.
 Package biblatex Info: Setting label 'refsegment:01' on input line 125.
-[7
+[8
 
-] [8] [9] [10] [11]
+] [9] [10] [11] [12] [13]
 Underfull \hbox (badness 1168) in paragraph at lines 274--275
 \TU/TimesNewRoman(0)/m/it/14.4 годы (acquisition function)\TU/TimesNewRoman(0)/
 m/n/14.4 , после чего в максимуме функции выгоды бу-
  []
 
-[12] [13] [14]
+[14] [15]
 Глава 2.
-[15
+[16
 
 ]
 File: parceptrone.png Graphic file (type bmp)
 <parceptrone.png>
- [16] [17] [18] [19]
+ [17] [18] [19] [20]
 File: bo_gp.png Graphic file (type bmp)
 <bo_gp.png>
- [20] [21]
+ [21] [22]
 File: hp-curves.png Graphic file (type bmp)
 <hp-curves.png>
 File: hp-difference.png Graphic file (type bmp)
 <hp-difference.png>
- [22] [23] [24]
+ [23] [24] [25]
 Глава 3.
-[25
+[26
 
 ]
 File: ../png/incubment-iteration/wine.png Graphic file (type bmp)
 <../png/incubment-iteration/wine.png>
- [26]
+ [27]
 File: ../png/incubment-iteration/Fashion-MNIST.png Graphic file (type bmp)
 <../png/incubment-iteration/Fashion-MNIST.png>
- [27] [28]
-Underfull \hbox (badness 1147) in paragraph at lines 475--478
+ [28] [29]
+File: ../png/incubment-iteration-posterior/wine.png Graphic file (type bmp)
+<../png/incubment-iteration-posterior/wine.png>
+
+Underfull \hbox (badness 1147) in paragraph at lines 478--479
 []\TU/TimesNewRoman(0)/m/n/14.4 Полный список результатов классической Байесовс
 кой оптимизации
  []
 
-File: ../png/incubment-iteration-posterior/wine.png Graphic file (type bmp)
-<../png/incubment-iteration-posterior/wine.png>
 File: ../png/incubment-iteration-posterior/car.png Graphic file (type bmp)
 <../png/incubment-iteration-posterior/car.png>
-[29]
+[30]
 File: ../png/incubment-iteration-posterior/desharnais.png Graphic file (type bm
 p)
 <../png/incubment-iteration-posterior/desharnais.png>
- [30] [31] [32
+ [31] [32] [33] [34] [35
 
-] [33
+] [36
 
-]
+] [37]
 \c@@yearminusfive@src=\count516
 \c@@yearminusten@src=\count517
 
 
-LaTeX Warning: Empty bibliography on input line 508.
+LaTeX Warning: Empty bibliography on input line 520.
 
 
-LaTeX Warning: Empty bibliography on input line 508.
+LaTeX Warning: Empty bibliography on input line 520.
 
 
-LaTeX Warning: Empty bibliography on input line 508.
+LaTeX Warning: Empty bibliography on input line 520.
 
 
-LaTeX Warning: Empty bibliography on input line 508.
+Package biblatex Warning: Type 'online' not found on input line 520.
 
 
-Package biblatex Warning: Type 'online' not found on input line 508.
+LaTeX Warning: Empty bibliography on input line 520.
 
-
-LaTeX Warning: Empty bibliography on input line 508.
-
-[34]
+[38]
 Приложение А.
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
+Underfull \hbox (badness 10000) in paragraph at lines 530--530
 []|\TU/TimesNewRoman(0)/b/n/14.4 Число
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
+Underfull \hbox (badness 10000) in paragraph at lines 530--530
 []|\TU/TimesNewRoman(0)/b/n/14.4 Число
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--519
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
 []|\TU/TimesNewRoman(0)/b/n/14.4 ID на
  []
 
 
-Underfull \vbox (badness 10000) detected at line 557
+Underfull \vbox (badness 10000) detected at line 569
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--558
+Underfull \hbox (badness 10000) in paragraph at lines 570--570
 []|\TU/TimesNewRoman(0)/m/n/14.4 gas-drift-different-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 582--582
+Underfull \hbox (badness 10000) in paragraph at lines 594--594
 []|\TU/TimesNewRoman(0)/m/n/14.4 jungle-chess-2pcs-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 582--582
+Underfull \hbox (badness 10000) in paragraph at lines 594--594
 \TU/TimesNewRoman(0)/m/n/14.4 endgame-panther-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 584--584
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
 []|\TU/TimesNewRoman(0)/m/n/14.4 jungle-chess-2pcs-raw-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 588--588
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
 []|\TU/TimesNewRoman(0)/m/n/14.4 LED-display-domain-
  []
 
-[35
+[39
 
-] [36] [37]
+] [40] [41]
 Приложение Б.
 
-Underfull \hbox (badness 10000) in paragraph at lines 687--687
-[]|\TU/TimesNewRoman(0)/m/n/14.4 jungle-chess-2pcs-raw-
+Underfull \vbox (badness 10000) detected at line 730
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 691--691
+Underfull \hbox (badness 10000) in paragraph at lines 731--731
 []|\TU/TimesNewRoman(0)/m/n/14.4 gas-drift-different-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 755--755
 []|\TU/TimesNewRoman(0)/m/n/14.4 jungle-chess-2pcs-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 755--755
 \TU/TimesNewRoman(0)/m/n/14.4 endgame-panther-
  []
 
 
-Underfull \vbox (badness 10000) detected at line 718
+Underfull \hbox (badness 10000) in paragraph at lines 757--757
+[]|\TU/TimesNewRoman(0)/m/n/14.4 jungle-chess-2pcs-raw-
  []
 
-[38
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 831--831
+Underfull \hbox (badness 10000) in paragraph at lines 761--761
 []|\TU/TimesNewRoman(0)/m/n/14.4 LED-display-domain-
  []
 
-[39] [40]
+[42
+
+] [43] [44]
 Приложение В.
 
-Underfull \hbox (badness 10000) in paragraph at lines 841--841
-[]|\TU/TimesNewRoman(0)/b/n/14.4 Номер
+Underfull \vbox (badness 10000) detected at line 891
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 841--841
-\TU/TimesNewRoman(0)/b/n/14.4 ите-
+Underfull \hbox (badness 10000) in paragraph at lines 892--892
+[]|\TU/TimesNewRoman(0)/m/n/14.4 gas-drift-different-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 841--841
-\TU/TimesNewRoman(0)/b/n/14.4 рации
+Underfull \hbox (badness 10000) in paragraph at lines 916--916
+[]|\TU/TimesNewRoman(0)/m/n/14.4 jungle-chess-2pcs-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 841--842
-[]|\TU/TimesNewRoman(0)/b/n/14.4 Номер
+Underfull \hbox (badness 10000) in paragraph at lines 916--916
+\TU/TimesNewRoman(0)/m/n/14.4 endgame-panther-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 841--842
-\TU/TimesNewRoman(0)/b/n/14.4 ите-
+Underfull \hbox (badness 10000) in paragraph at lines 918--918
+[]|\TU/TimesNewRoman(0)/m/n/14.4 jungle-chess-2pcs-raw-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 841--842
-\TU/TimesNewRoman(0)/b/n/14.4 рации
+Underfull \hbox (badness 10000) in paragraph at lines 922--922
+[]|\TU/TimesNewRoman(0)/m/n/14.4 LED-display-domain-
+ []
+
+[45
+
+] [46] [47]
+Приложение Г.
+
+Overfull \hbox (11.47134pt too wide) in alignment at lines 1011--1052
+ [] [] [] 
  []
 
 
-Overfull \hbox (4.01859pt too wide) in paragraph at lines 855--855
+Underfull \vbox (badness 10000) detected at line 1052
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1053
+[]|\TU/TimesNewRoman(0)/m/n/14.4 gas-drift-different-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1077--1077
+[]|\TU/TimesNewRoman(0)/m/n/14.4 jungle-chess-2pcs-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1077--1077
+\TU/TimesNewRoman(0)/m/n/14.4 endgame-panther-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1079--1079
+[]|\TU/TimesNewRoman(0)/m/n/14.4 jungle-chess-2pcs-raw-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1083
+[]|\TU/TimesNewRoman(0)/m/n/14.4 LED-display-domain-
+ []
+
+
+Overfull \hbox (11.47134pt too wide) in alignment at lines 1052--1092
+ [] [] [] 
+ []
+
+
+Overfull \hbox (11.47134pt too wide) in alignment at lines 1092--1132
+ [] [] [] 
+ []
+
+[48
+
+]
+Overfull \hbox (11.47134pt too wide) in alignment at lines 1132--1167
+ [] [] [] 
+ []
+
+[49] [50]
+Приложение Д.
+
+Overfull \hbox (11.47134pt too wide) in alignment at lines 1172--1213
+ [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1213
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1214--1214
+[]|\TU/TimesNewRoman(0)/m/n/14.4 gas-drift-different-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
+[]|\TU/TimesNewRoman(0)/m/n/14.4 jungle-chess-2pcs-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
+\TU/TimesNewRoman(0)/m/n/14.4 endgame-panther-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1240--1240
+[]|\TU/TimesNewRoman(0)/m/n/14.4 jungle-chess-2pcs-raw-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1244--1244
+[]|\TU/TimesNewRoman(0)/m/n/14.4 LED-display-domain-
+ []
+
+
+Overfull \hbox (11.47134pt too wide) in alignment at lines 1213--1253
+ [] [] [] 
+ []
+
+
+Overfull \hbox (11.47134pt too wide) in alignment at lines 1253--1293
+ [] [] [] 
+ []
+
+[51
+
+]
+Overfull \hbox (11.47134pt too wide) in alignment at lines 1293--1328
+ [] [] [] 
+ []
+
+[52] [53]
+Приложение Е.
+
+Overfull \hbox (34.01773pt too wide) in paragraph at lines 1335--1335
+[]|\TU/TimesNewRoman(0)/b/n/14.4 Статистика
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1335--1335
+\TU/TimesNewRoman(0)/b/n/14.4 (зна-
+ []
+
+
+Overfull \hbox (34.01773pt too wide) in paragraph at lines 1335--1335
+[]|\TU/TimesNewRoman(0)/b/n/14.4 Статистика
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1335--1335
+\TU/TimesNewRoman(0)/b/n/14.4 (ите-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1335--1335
+\TU/TimesNewRoman(0)/b/n/14.4 ра-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1339--1339
+[]|\TU/TimesNewRoman(0)/m/n/14.4 artificial-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1341--1341
+[]|\TU/TimesNewRoman(0)/m/n/14.4 8,930724418684081e-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1343--1343
+[]|\TU/TimesNewRoman(0)/m/n/14.4 9,133589555477501e-
+ []
+
+
+Overfull \hbox (4.01859pt too wide) in paragraph at lines 1347--1347
 []|\TU/TimesNewRoman(0)/m/n/14.4 cardiotocography| 
  []
 
 
-Overfull \hbox (33.9467pt too wide) in alignment at lines 839--864
+Overfull \hbox (6.67207pt too wide) in paragraph at lines 1351--1351
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,008628728041559883| 
+ []
+
+
+Overfull \hbox (6.67207pt too wide) in paragraph at lines 1357--1357
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,000998433276441516| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1361--1361
+[]|\TU/TimesNewRoman(0)/m/n/14.4 9,082557304573249e-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1363--1363
+[]|\TU/TimesNewRoman(0)/m/n/14.4 energy-
+ []
+
+
+Overfull \hbox (6.67207pt too wide) in paragraph at lines 1363--1364
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,005054285964439421| 
+ []
+
+
+Overfull \hbox (13.87209pt too wide) in paragraph at lines 1367--1367
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,0008573124899734856| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1369--1369
+[]|\TU/TimesNewRoman(0)/m/n/14.4 9,133589555477501e-
+ []
+
+
+Overfull \hbox (6.13771pt too wide) in paragraph at lines 1371--1371
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,032011050641513446| 
+ []
+
+
+Overfull \hbox (13.87209pt too wide) in paragraph at lines 1371--1372
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,0014084528140968727| 
+ []
+
+
+Overfull \hbox (13.87209pt too wide) in paragraph at lines 1373--1373
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,0008531246844597982| 
+ []
+
+
+Overfull \hbox (33.9467pt too wide) in alignment at lines 1333--1374
  [] [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 864
+Underfull \vbox (badness 10000) detected at line 1374
  []
 
-[41
 
-] (./bachelor-thesis.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 1375--1375
+[]|\TU/TimesNewRoman(0)/m/n/14.4 gas-drift-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1375--1375
+\TU/TimesNewRoman(0)/m/n/14.4 different-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1379--1379
+[]|\TU/TimesNewRoman(0)/m/n/14.4 9,082557304573249e-
+ []
+
+
+Overfull \hbox (6.67207pt too wide) in paragraph at lines 1381--1381
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,012874040410554032| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1385--1385
+[]|\TU/TimesNewRoman(0)/m/n/14.4 heart-long-
+ []
+
+
+Overfull \hbox (6.67207pt too wide) in paragraph at lines 1385--1385
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,005664848342237332| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1387--1387
+[]|\TU/TimesNewRoman(0)/m/n/14.4 heart-
+ []
+
+
+Overfull \hbox (6.67207pt too wide) in paragraph at lines 1393--1394
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,041542094427088304| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+[]|\TU/TimesNewRoman(0)/m/n/14.4 jungle-chess-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+\TU/TimesNewRoman(0)/m/n/14.4 2pcs-endgame-
+ []
+
+
+Overfull \hbox (21.07207pt too wide) in paragraph at lines 1399--1400
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,00012174335714866438| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1401--1401
+[]|\TU/TimesNewRoman(0)/m/n/14.4 jungle-chess-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1401--1401
+\TU/TimesNewRoman(0)/m/n/14.4 2pcs-raw-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1401--1401
+\TU/TimesNewRoman(0)/m/n/14.4 endgame-
+ []
+
+
+Overfull \hbox (6.67207pt too wide) in paragraph at lines 1403--1404
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,008586830498033986| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1405--1405
+[]|\TU/TimesNewRoman(0)/m/n/14.4 LED-display-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1413--1413
+[]|\TU/TimesNewRoman(0)/m/n/14.4 mfeat-
+ []
+
+
+Overfull \hbox (33.9467pt too wide) in alignment at lines 1374--1414
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.02016pt too wide) in paragraph at lines 1417--1417
+[]|\TU/TimesNewRoman(0)/m/n/14.4 microaggregation2| 
+ []
+
+
+Overfull \hbox (6.13771pt too wide) in paragraph at lines 1417--1417
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,032011050641513446| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1421--1421
+[]|\TU/TimesNewRoman(0)/m/n/14.4 9,133589555477501e-
+ []
+
+
+Overfull \hbox (6.67207pt too wide) in paragraph at lines 1423--1423
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,026951278584693587| 
+ []
+
+
+Overfull \hbox (6.67207pt too wide) in paragraph at lines 1425--1425
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,044426454239524814| 
+ []
+
+
+Overfull \hbox (6.67207pt too wide) in paragraph at lines 1429--1429
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,038791648742565764| 
+ []
+
+
+Overfull \hbox (6.13771pt too wide) in paragraph at lines 1429--1430
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,026725923112053882| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1433--1433
+[]|\TU/TimesNewRoman(0)/m/n/14.4 robot-failures-
+ []
+
+
+Overfull \hbox (13.87209pt too wide) in paragraph at lines 1433--1433
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,0008470996587719184| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1435--1435
+[]|\TU/TimesNewRoman(0)/m/n/14.4 robot-failures-
+ []
+
+
+Overfull \hbox (6.67207pt too wide) in paragraph at lines 1435--1435
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,002293196040126747| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1437--1437
+[]|\TU/TimesNewRoman(0)/m/n/14.4 9,133589555477501e-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1443--1443
+[]|\TU/TimesNewRoman(0)/m/n/14.4 6,748340454864083e-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1445--1445
+[]|\TU/TimesNewRoman(0)/m/n/14.4 9,133589555477501e-
+ []
+
+
+Overfull \hbox (6.67207pt too wide) in paragraph at lines 1447--1447
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,006357167164419588| 
+ []
+
+
+Overfull \hbox (6.13771pt too wide) in paragraph at lines 1449--1449
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,022536893158116134| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1453--1453
+[]|\TU/TimesNewRoman(0)/m/n/14.4 synthetic-
+ []
+
+
+Overfull \hbox (33.9467pt too wide) in alignment at lines 1414--1454
+ [] [] [] [] [] 
+ []
+
+[54
+
+]
+Overfull \hbox (6.67207pt too wide) in paragraph at lines 1455--1456
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,051924790898487144| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1457--1457
+[]|\TU/TimesNewRoman(0)/m/n/14.4 tamilnadu-
+ []
+
+
+Overfull \hbox (4.84125pt too wide) in paragraph at lines 1459--1459
+[]|\TU/TimesNewRoman(0)/m/n/14.4 teachingAssistant| 
+ []
+
+
+Overfull \hbox (6.67207pt too wide) in paragraph at lines 1469--1470
+[]|\TU/TimesNewRoman(0)/m/n/14.4 0,051989872229493375| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1479--1479
+[]|\TU/TimesNewRoman(0)/m/n/14.4 wall-robot-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1485--1485
+[]|\TU/TimesNewRoman(0)/m/n/14.4 wine-quality-
+ []
+
+
+Overfull \hbox (33.9467pt too wide) in alignment at lines 1454--1491
+ [] [] [] [] [] 
+ []
+
+[55] [56] [57] (./bachelor-thesis.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1837,12 +2258,12 @@ Package logreq Info: Writing requests to 'bachelor-thesis.run.xml'.
 ### semi simple group (level 1) entered at line 64 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 32493 strings out of 479418
- 663687 string characters out of 5884586
- 1655135 words of memory out of 5000000
- 49353 multiletter control sequences out of 15000+600000
+ 32532 strings out of 479418
+ 665137 string characters out of 5884586
+ 1657151 words of memory out of 5000000
+ 49392 multiletter control sequences out of 15000+600000
  541523 words of font info for 106 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 60i,12n,99p,1872b,28109s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,12n,99p,2026b,28109s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bachelor-thesis.pdf (44 pages).
+Output written on bachelor-thesis.pdf (60 pages).

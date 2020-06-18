@@ -1,55 +1,39 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {russian}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{ВВЕДЕНИЕ}{5}%
+\contentsline {chapter}{ВВЕДЕНИЕ}{6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Обзор существующих решений}{7}%
+\contentsline {chapter}{\numberline {1}Обзор существующих решений}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Определения и ключевые понятия}{7}%
+\contentsline {section}{\numberline {1.1}Определения и ключевые понятия}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Обзор классификаторов}{7}%
+\contentsline {section}{\numberline {1.2}Обзор классификаторов}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Линейная регрессия}{7}%
+\contentsline {paragraph}{Линейная регрессия}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Логистическая регрессия}{8}%
+\contentsline {paragraph}{Логистическая регрессия}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Линейный дискриминантный анализ (LDA)}{8}%
+\contentsline {paragraph}{Линейный дискриминантный анализ (LDA)}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Деревья принятия решений}{8}%
+\contentsline {paragraph}{Деревья принятия решений}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Наивный Байесовский классификатор}{8}%
+\contentsline {paragraph}{Наивный Байесовский классификатор}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{K-ближайших соседей (KNN)}{8}%
+\contentsline {paragraph}{K-ближайших соседей (KNN)}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Метод опорных векторов (SVM)}{8}%
+\contentsline {paragraph}{Метод опорных векторов (SVM)}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Бэггинг и случайный лес (RandomForest)}{8}%
+\contentsline {paragraph}{Бэггинг и случайный лес (RandomForest)}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Бустинг и AdaBoost}{8}%
+\contentsline {paragraph}{Бустинг и AdaBoost}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Многослойный персептрон (Multilayered perceptron)}{9}%
+\contentsline {paragraph}{Многослойный персептрон (Multilayered perceptron)}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Меры оценки качества классификации}{9}%
+\contentsline {section}{\numberline {1.3}Меры оценки качества классификации}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Обзор подходов к оптимизации гиперпараметров}{10}%
+\contentsline {section}{\numberline {1.4}Обзор подходов к оптимизации гиперпараметров}{11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Поиск по решётке}{10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{Доступные реализации}{10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{Достоинства}{10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{Недостатки}{10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Случайный поиск}{10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{Доступные реализации}{10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{Достоинства}{11}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{Недостатки}{11}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Байесовская оптимизация}{11}%
+\contentsline {paragraph}{Поиск по решётке}{11}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subparagraph}{Доступные реализации}{11}%
 \defcounter {refsection}{0}\relax 
@@ -57,7 +41,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subparagraph}{Недостатки}{11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Оптимизация на основе градиентов}{11}%
+\contentsline {paragraph}{Случайный поиск}{11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Доступные реализации}{11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Достоинства}{12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Недостатки}{12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Байесовская оптимизация}{12}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subparagraph}{Доступные реализации}{12}%
 \defcounter {refsection}{0}\relax 
@@ -65,77 +57,157 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subparagraph}{Недостатки}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Эволюционная оптимизация}{12}%
+\contentsline {paragraph}{Оптимизация на основе градиентов}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{Доступные реализации}{12}%
+\contentsline {subparagraph}{Доступные реализации}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{Достоинства}{12}%
+\contentsline {subparagraph}{Достоинства}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{Недостатки}{12}%
+\contentsline {subparagraph}{Недостатки}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.1}Сравнение существующих подходов к оптимизации}{12}%
+\contentsline {paragraph}{Эволюционная оптимизация}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.2}Байесовская оптимизация}{12}%
+\contentsline {subparagraph}{Доступные реализации}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Модель}{13}%
+\contentsline {subparagraph}{Достоинства}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Максимизатор}{13}%
+\contentsline {subparagraph}{Недостатки}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Функция выгоды}{14}%
+\contentsline {subsection}{\numberline {1.4.1}Сравнение существующих подходов к оптимизации}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Целевая функция}{14}%
+\contentsline {subsection}{\numberline {1.4.2}Байесовская оптимизация}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Выводы по главе\nobreakspace 1}{14}%
+\contentsline {paragraph}{Модель}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Предложенное решение}{15}%
+\contentsline {paragraph}{Максимизатор}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Параметры для оптимизации}{15}%
+\contentsline {paragraph}{Функция выгоды}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Модель оптимизации}{15}%
+\contentsline {paragraph}{Целевая функция}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Классификатор}{15}%
+\contentsline {section}{Выводы по главе\nobreakspace 1}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.2.1}Обоснование}{15}%
+\contentsline {chapter}{\numberline {2}Предложенное решение}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.2.2}Набор гиперпараметров}{16}%
+\contentsline {section}{\numberline {2.1}Параметры для оптимизации}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}Целевая функция}{17}%
+\contentsline {subsection}{\numberline {2.1.1}Модель оптимизации}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Мера оценки качества классификации}{17}%
+\contentsline {subsection}{\numberline {2.1.2}Классификатор}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Метрика для определения подобия задач}{18}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}Обоснование}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Расширение Байесовской оптимизации}{19}%
+\contentsline {subsubsection}{\numberline {2.1.2.2}Набор гиперпараметров}{17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Апостериорная информация}{19}%
+\contentsline {subsection}{\numberline {2.1.3}Целевая функция}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Расстановка начальных конфигураций}{21}%
+\contentsline {paragraph}{Мера оценки качества классификации}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Выводы по главе\nobreakspace 2}{24}%
+\contentsline {section}{\numberline {2.2}Метрика для определения подобия задач}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Анализ полученных результатов}{25}%
+\contentsline {section}{\numberline {2.3}Расширение Байесовской оптимизации}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Подробности реализации}{25}%
+\contentsline {subsection}{\numberline {2.3.1}Апостериорная информация}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Статистические результаты, дисперсия}{25}%
+\contentsline {subsection}{\numberline {2.3.2}Расстановка начальных конфигураций}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Результаты классической Байесовской оптимизации}{25}%
+\contentsline {section}{Выводы по главе\nobreakspace 2}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Сравнение результатов классической и расширенной Байесовской оптимизации}{27}%
+\contentsline {chapter}{\numberline {3}Анализ полученных результатов}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Оценка качества оптимизации}{28}%
+\contentsline {section}{\numberline {3.1}Подробности реализации}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Значения целевых функций различны.}{29}%
+\contentsline {section}{\numberline {3.2}Статистические результаты, дисперсия}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Значения целевых функций одинаковы.}{29}%
+\contentsline {section}{\numberline {3.3}Результаты классической Байесовской оптимизации}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}Оценка результатов}{29}%
+\contentsline {section}{\numberline {3.4}Сравнение результатов классической и расширенной Байесовской оптимизации}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Выводы по главе\nobreakspace 3}{30}%
+\contentsline {subsection}{\numberline {3.4.1}Оценка качества оптимизации}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{ЗАКЛЮЧЕНИЕ}{32}%
+\contentsline {paragraph}{Значения целевых функций различны.}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{33}%
+\contentsline {paragraph}{Значения целевых функций одинаковы.}{30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.2}Оценка результатов}{30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Выводы по главе\nobreakspace 3}{34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{ЗАКЛЮЧЕНИЕ}{35}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{36}%
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
 \babel@toc {english}{}
 \babel@toc {russian}{}
 \babel@toc {english}{}
@@ -195,9 +267,15 @@
 \defcounter {refsection}{0}\relax 
 \ttl@change@v {chapter}{}{}{}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {А}Информация об отобранных датасетах}{35}%
+\contentsline {chapter}{\numberline {А}Информация об отобранных датасетах}{39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {Б}Результаты классической Байесовской оптимизации}{38}%
+\contentsline {chapter}{\numberline {Б}Результаты классической Байесовской оптимизации}{42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {В}Результаты расширенной Байесовской оптимизации}{41}%
+\contentsline {chapter}{\numberline {В}Результаты расширенной Байесовской оптимизации}{45}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {Г}Дисперсии для классической Байесовской оптимизации}{48}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {Д}Дисперсии для расширенной Байесовской оптимизации}{51}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {Е}Значимость результатов}{54}%
 \contentsfinish 
