@@ -5,7 +5,32 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from utils import read_dataset, read_full_result, get_datasets_list, get_opt
+from scipy.stats import mannwhitneyu
+from utils import read_dataset, read_full_result, read_opt_result, get_datasets_list, get_opt
+
+DATASETS = [
+    'abalone', 'artificial-characters', 'balance-scale', 'breast-tissue',
+    'car', 'cardiotocography', 'cmc', 'cnae-9', 'collins', 'covertype',
+    'desharnais', 'diggle_table_a2', 'ecoli', 'energy-efficiency',
+    'eye_movements', 'fabert', 'fars', 'Fashion-MNIST', 'gas-drift',
+    'gas-drift-different-concentrations', 'gina_prior2', 'glass', 'har',
+    'hayes-roth', 'heart-long-beach', 'heart-switzerland', 'helena',
+    'Indian_pines', 'iris', 'jannis', 'JapaneseVowels',
+    'jungle_chess_2pcs_endgame_panther_elephant',
+    'jungle_chess_2pcs_raw_endgame_complete', 'leaf',
+    'LED-display-domain-7digit', 'mfeat-factors', 'mfeat-fourier',
+    'mfeat-karhunen', 'mfeat-morphological', 'mfeat-pixel',
+    'microaggregation2', 'nursery', 'page-blocks', 'pokerhand', 'PopularKids',
+    'prnn_fglass', 'prnn_viruses', 'rmftsa_sleepdata', 'robot-failures-lp1',
+    'robot-failures-lp5', 'satimage', 'seeds', 'segment', 'seismic-bumps',
+    'semeion', 'shuttle', 'spectrometer', 'steel-plates-fault',
+    'synthetic_control', 'tae', 'tamilnadu-electricity', 'teachingAssistant',
+    'thyroid-allbp', 'thyroid-allhyper', 'user-knowledge', 'vehicle',
+    'vertebra-column', 'volcanoes-a1', 'volcanoes-a3', 'volcanoes-a4',
+    'volcanoes-d1', 'wall-robot-navigation', 'waveform-5000', 'wine',
+    'wine-quality-white', 'zoo'
+]
+
 
 def dispersion_per_dataset(dataset_name, dir_name):
     iterations = list()
@@ -35,30 +60,83 @@ def dispersion_per_dataset(dataset_name, dir_name):
 
     return round(mean_iter_disp), mean_val_disp
 
-def calculate_dispersions():
-    datasets = [
-        'page-blocks', 'robot-failures-lp1', 'mfeat-fourier',
-        'jungle_chess_2pcs_raw_endgame_complete', 'heart-switzerland',
-        'gas-drift-different-concentrations', 'wall-robot-navigation',
-        'jungle_chess_2pcs_endgame_panther_elephant', 'leaf', 'PopularKids',
-        'mfeat-karhunen', 'diggle_table_a2', 'rmftsa_sleepdata', 'semeion',
-        'desharnais', 'teachingAssistant', 'collins', 'volcanoes-a3',
-        'artificial-characters', 'volcanoes-a4', 'glass', 'nursery', 'shuttle',
-        'segment', 'heart-long-beach', 'vertebra-column', 'cnae-9', 'jannis',
-        'wine-quality-white', 'vehicle', 'ecoli', 'eye_movements', 'seeds',
-        'car', 'fabert', 'breast-tissue', 'thyroid-allbp', 'gas-drift',
-        'mfeat-factors', 'volcanoes-d1', 'har', 'satimage', 'Fashion-MNIST',
-        'seismic-bumps', 'pokerhand', 'helena', 'thyroid-allhyper', 'wine',
-        'balance-scale', 'microaggregation2', 'steel-plates-fault', 'tae',
-        'mfeat-pixel', 'gina_prior2', 'synthetic_control', 'cmc',
-        'energy-efficiency', 'iris', 'fars', 'abalone', 'prnn_viruses',
-        'Indian_pines', 'covertype', 'JapaneseVowels', 'user-knowledge',
-        'spectrometer', 'hayes-roth', 'robot-failures-lp5', 'prnn_fglass',
-        'waveform-5000', 'zoo', 'cardiotocography', 'mfeat-morphological',
-        'volcanoes-a1', 'tamilnadu-electricity', 'LED-display-domain-7digit'
-    ]
-    for name in datasets:
-        mean_iter_disp, mean_val_disp = dispersion_per_dataset(name, '../optimization_results/f-score/random-log_ei-gp/')
-        print(name, mean_iter_disp, mean_val_disp)
 
+def calculate_dispersions():
+    # c_dir = '../optimization_results/classical-bo/f-score/random-log_ei-gp/'
+    p_dir = '../optimization_results/posterior-init/f-score/random-log_ei-gp/'
+    info = open('../dispersion-pbo.csv', 'w')
+    info.write(
+        '"name","mean disp (val)","mean disp (iter)"\n'
+    )
+    for name in DATASETS:
+        mean_iter_disp, mean_val_disp = dispersion_per_dataset(
+            name, p_dir)
+        info.write(name + ',' + str(mean_val_disp) + ',' + str(mean_iter_disp) + '\n')
+        print(name, mean_val_disp, mean_iter_disp)
+
+
+def calculate_importance(dataset_name):
+    c_dir = '../optimization_results/classical-bo/f-score/random-log_ei-gp/'
+    p_dir = '../optimization_results/posterior-init/f-score/random-log_ei-gp/'
+    cbo_result = list()
+    pbo_result = list()
+    cbo_iters = list()
+    pbo_iters = list()
+    for run in range(10):
+        c_x_opt, c_f_opt, c_incubments, c_incumbent_values, _, _, _, _ = read_full_result(
+            c_dir + dataset_name + '/run-' + str(run))
+        c_ymin = c_f_opt
+        c_xpos = c_incumbent_values.index(c_ymin)
+        c_xmin = c_xpos
+        cbo_iters.append(c_xmin)
+        cbo_result.append(c_ymin)
+
+        p_x_opt, p_f_opt, p_incubments, p_incumbent_values, _, _, _, _ = read_full_result(
+            p_dir + dataset_name + '/run-' + str(run))
+        p_ymin = p_f_opt
+        p_xpos = p_incumbent_values.index(p_ymin)
+        p_xmin = p_xpos
+        pbo_iters.append(p_xmin)
+        pbo_result.append(p_ymin)
+
+        # _, classical_f_opt = read_opt_result(
+        #     '../optimization_results/classical-bo/f-score/random-log_ei-gp/' +
+        #     dataset_name + '/run-' + str(run))
+        # _, posterior_f_opt = read_opt_result(
+        #     '../optimization_results/posterior-init/f-score/random-log_ei-gp/'
+        #     + dataset_name + '/run-' + str(run))
+        # cbo_result.append(classical_f_opt)
+        # pbo_result.append(posterior_f_opt)
+        # print(classical_f_opt > posterior_f_opt)
+
+    # print(cbo_result)
+    # print(pbo_result)
+    try:
+        stat_res, pval_res = mannwhitneyu(cbo_result, pbo_result)
+    except ValueError:
+        stat_res = pval_res = -1
+    try:
+        stat_iter, pval_iter = mannwhitneyu(cbo_iters, pbo_iters)
+    except ValueError:
+        stat_iter, pval_iter  = -1
+
+    # print(stat, pval)
+    return stat_res, pval_res, stat_iter, pval_iter
+
+
+def importance():
+    info = open('../importance.csv', 'w')
+    info.write(
+        '"name","statistic (val)","pvalue (val)","statistic (iter)","pvalue (iter)"\n'
+    )
+    for name in DATASETS:
+        stat_res, pval_res, stat_iter, pval_iter = calculate_importance(
+            name)
+        info.write(name + ',' + str(stat_res) + ',' + str(pval_res) + ',' +
+                   str(stat_iter) + ',' + str(pval_iter) + '\n')
+        # print(name, stat, pval)
+
+
+# importance()
+# calculate_importance('wine')
 calculate_dispersions()
