@@ -1,99 +1,171 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'bachelor-thesis.blg'
-[106] biber-darwin:322> INFO - === Fri Jun 19, 2020, 02:53:19
-[137] Biber.pm:415> INFO - Reading 'bachelor-thesis.bcf'
-[323] Biber.pm:943> INFO - Found 22 citekeys in bib section 0
-[340] Biber.pm:4256> INFO - Processing section 0
-[340] Utils.pm:75> INFO - Globbing data source 'bachelor-thesis.bib'
-[341] Utils.pm:91> INFO - Globbed data source 'bachelor-thesis.bib' to bachelor-thesis.bib
-[360] Biber.pm:4455> INFO - Looking for bibtex format file 'bachelor-thesis.bib' for section 0
-[362] bibtex.pm:1653> INFO - LaTeX decoding ...
-[399] bibtex.pm:1471> INFO - Found BibTeX data source 'bachelor-thesis.bib'
-[606] Utils.pm:304> WARN - I didn't find a database entry for 'automlbook19a' (section 0)
-[627] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
-[627] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[627] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[628] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[628] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[628] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[629] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[629] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
-[629] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[629] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[629] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[630] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
-[630] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[631] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[631] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[631] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
-[631] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[632] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[632] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[635] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[636] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[636] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[637] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
-[637] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[637] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[637] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[638] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
-[638] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[638] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[638] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[638] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
-[638] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[639] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[639] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[639] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
-[639] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[639] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[639] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[640] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[640] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[640] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[642] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
-[642] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[642] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[642] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[643] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
-[643] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[643] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[643] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[644] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
-[644] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[644] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[644] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[645] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
-[645] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[645] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[645] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[646] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
-[646] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[646] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[646] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[647] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
-[647] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[647] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[647] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[647] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
-[647] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[647] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[648] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[648] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
-[648] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[648] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[649] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[650] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[650] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[650] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[651] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
-[651] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[651] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[651] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[657] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[657] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
-[657] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'ru-RU'
-[657] Biber.pm:4090> INFO - No sort tailoring available for locale 'ru-RU'
-[697] bbl.pm:652> INFO - Writing 'bachelor-thesis.bbl' with encoding 'UTF-8'
-[714] bbl.pm:755> INFO - Output to bachelor-thesis.bbl
-[715] Biber.pm:128> INFO - WARNINGS: 81
+[100] biber-darwin:322> INFO - === Sun Jun 21, 2020, 01:44:01
+[129] Biber.pm:415> INFO - Reading 'bachelor-thesis.bcf'
+[292] Biber.pm:943> INFO - Found 38 citekeys in bib section 0
+[309] Biber.pm:4256> INFO - Processing section 0
+[309] Utils.pm:75> INFO - Globbing data source 'bachelor-thesis.bib'
+[309] Utils.pm:91> INFO - Globbed data source 'bachelor-thesis.bib' to bachelor-thesis.bib
+[331] Biber.pm:4455> INFO - Looking for bibtex format file 'bachelor-thesis.bib' for section 0
+[334] bibtex.pm:1653> INFO - LaTeX decoding ...
+[402] bibtex.pm:1471> INFO - Found BibTeX data source 'bachelor-thesis.bib'
+[408] Utils.pm:304> WARN - Duplicate entry key: 'NIPS2015_5872' in file 'bachelor-thesis.bib', skipping ...
+[562] Utils.pm:304> WARN - month field 'jul' in entry 'Bergstra_2015' is not an integer - this will probably not sort properly.
+[572] Utils.pm:304> WARN - month field 'June' in entry 'H2OAutoML' is not an integer - this will probably not sort properly.
+[611] Utils.pm:304> WARN - month field 'Jan' in entry 'Probst_2019' is not an integer - this will probably not sort properly.
+[677] Utils.pm:304> WARN - month field 'jul' in entry 'DEAP_JMLR2012' is not an integer - this will probably not sort properly.
+[768] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[769] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[769] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[769] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[769] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[770] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[770] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[770] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[770] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[770] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[770] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[771] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[771] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[771] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[771] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[772] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[772] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[772] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[772] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[773] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[773] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[773] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[774] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[774] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[774] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[774] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[774] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[774] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[775] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[775] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[775] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[775] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[775] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[775] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[776] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[776] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[776] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[776] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[777] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[777] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[777] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[777] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[778] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[778] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[778] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[778] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[779] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[779] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[779] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[779] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[779] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[779] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[779] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[780] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[780] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[780] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[780] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[780] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[781] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[781] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[781] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[781] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[782] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[782] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[782] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[782] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[782] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[783] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[783] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[783] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[783] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[783] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[783] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[784] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[784] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[784] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[784] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[784] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[785] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[785] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[785] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[785] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[786] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[786] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[786] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[786] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[787] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[787] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[787] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[787] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[788] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[788] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[788] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[788] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[788] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[788] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[789] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[789] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[789] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[789] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[789] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[790] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[790] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[790] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[790] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[791] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[791] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[791] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[791] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[792] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[792] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[792] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[792] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[792] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[793] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[793] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[793] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[793] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[793] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[793] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[793] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[794] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[794] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[794] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[794] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[795] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[795] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[795] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[795] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[796] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[796] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[796] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[796] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[797] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[797] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[797] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[797] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[798] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[798] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[798] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[798] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[799] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[799] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[799] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[799] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[800] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[800] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[800] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[805] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[805] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[806] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'ru-RU'
+[806] Biber.pm:4090> INFO - No sort tailoring available for locale 'ru-RU'
+[861] bbl.pm:652> INFO - Writing 'bachelor-thesis.bbl' with encoding 'UTF-8'
+[894] bbl.pm:755> INFO - Output to bachelor-thesis.bbl
+[894] Biber.pm:128> INFO - WARNINGS: 153
