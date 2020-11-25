@@ -104,8 +104,5 @@ def train_datasets(use_initial_design, mode, optimization_runs_per_dataset=1):
                       optimization_runs_per_dataset)
 
 
-# without posterior
-# train_datasets('posterior-init/')
-
 # with posterior
 train_datasets(True, 'posterior-init/', 10)
